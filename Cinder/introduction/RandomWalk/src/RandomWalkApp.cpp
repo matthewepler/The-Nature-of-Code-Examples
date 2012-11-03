@@ -1,8 +1,9 @@
 //
-// Random Walker (No Vectors)
-// The Nature of Code
+//  Random Walker (No Vectors)
+//  The Nature of Code
 //
-// Created by Greg Kepler
+//  Converted from Dan Shiffman's Processing Examples
+//  Created by Greg Kepler
 //
 //
 
