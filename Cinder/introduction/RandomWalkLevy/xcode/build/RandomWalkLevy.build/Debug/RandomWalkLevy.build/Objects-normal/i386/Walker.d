@@ -1074,4 +1074,4 @@ dependencies: \
   ../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/boost/boost/random/uniform_on_sphere.hpp \
   ../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/boost/boost/random/uniform_smallint.hpp \
   ../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/boost/boost/random/weibull_distribution.hpp \
-  /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkLevy/xcode/../src/Walker.h
+  /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkLevy/xcode/../include/Walker.h

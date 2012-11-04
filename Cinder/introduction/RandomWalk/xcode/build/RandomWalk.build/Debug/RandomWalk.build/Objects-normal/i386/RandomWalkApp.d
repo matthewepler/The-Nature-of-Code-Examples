@@ -490,4 +490,4 @@ dependencies: \
   ../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/include/cinder/Timer.h \
   ../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/include/cinder/Function.h \
   ../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/include/cinder/app/TouchEvent.h \
-  /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalk/xcode/../src/Walker.h
+  /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalk/xcode/../include/Walker.h

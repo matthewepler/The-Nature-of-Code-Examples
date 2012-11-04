@@ -40,7 +40,6 @@ void Walker::step()
 {
 	float stepX = randFloat(-1.0f, 1.0f);
 	float stepY = randFloat(-1.0f, 1.0f);
-	console() << stepX << endl;
 	
 	mX += stepX;
     mY += stepY;

@@ -2,7 +2,7 @@
 //  Random Walker Vectors
 //  The Nature of Code
 //
-//  Converted from Dan Shiffman's Processing Examples
+//  Converted from Daniel Shiffman's Processing Examples
 //  Created by Greg Kepler
 //
 //
