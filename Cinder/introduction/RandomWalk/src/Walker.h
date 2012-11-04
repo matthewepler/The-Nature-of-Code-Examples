@@ -1,6 +1,6 @@
 //
 //  Walker.h
-//  RandomWalk (No Vectors)
+//  Random Walk (No Vectors)
 //  The Nature of Code
 //
 //  Created by Greg Kepler

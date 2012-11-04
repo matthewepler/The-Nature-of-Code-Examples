@@ -25,6 +25,8 @@ Walker::Walker()
 	
 	mPerlin = Perlin();
 	
+	// fBm returns gaussian distributed values more similar to processing's noise()
+	// function than cinder's Perlin noise() function in the range of (-0.5 to 0.5).
 	mX = lmap(mPerlin.fBm(mTx), -0.5f, 0.5f, 0.0f, (float)getWindowWidth());
 	mY = lmap(mPerlin.fBm(mTy), -0.5f, 0.5f, 0.0f, (float)getWindowHeight());
 	
@@ -53,6 +55,7 @@ void Walker::step()
 	
     mTx += 0.01f;
     mTy += 0.01f;
+	
 	
 	if(!mReady) mReady = true;
 }
