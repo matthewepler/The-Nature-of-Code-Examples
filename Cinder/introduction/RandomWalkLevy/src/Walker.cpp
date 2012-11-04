@@ -20,10 +20,12 @@ Walker::Walker()
 {
 	mX = getWindowWidth()/2;
 	mY = getWindowHeight()/2;
+	mReady = false;
 }
 
 void Walker::render()
 {
+	if(!mReady) return;	// to prevent drawing before update is called
 	gl::color( 1, 1, 1 );
 	gl::drawLine( Vec2f(mPrevX, mPrevY), Vec2f(mX, mY) );
 }
@@ -45,6 +47,8 @@ void Walker::step()
 	mY += stepy;
 	mX = constrain( mX, 0.0f, (float)getWindowWidth()-1 );
     mY = constrain( mY, 0.0f, (float)getWindowHeight()-1 );
+	
+	if(!mReady) mReady = true;
 }
 
 float Walker::montecarlo()

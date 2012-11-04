@@ -34,6 +34,7 @@ void RandomWalkLevyApp::prepareSettings( Settings *settings )
 
 void RandomWalkLevyApp::setup()
 {
+	gl::clear( Color( 0, 0, 0 ) );
 	// Create a walker object
 	walker = new Walker();
 }
@@ -45,7 +46,6 @@ void RandomWalkLevyApp::update()
 
 void RandomWalkLevyApp::draw()
 {
-	gl::clear( Color( 0, 0, 0 ) );
 	walker->render();
 }
 

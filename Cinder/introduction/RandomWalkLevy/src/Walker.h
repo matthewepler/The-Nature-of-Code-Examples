@@ -18,4 +18,5 @@ private:
 	float montecarlo();
 	float mX, mY;
 	float mPrevX, mPrevY;
+	bool		mReady;
 };

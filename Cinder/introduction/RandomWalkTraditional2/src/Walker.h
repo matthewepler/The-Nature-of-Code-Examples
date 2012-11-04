@@ -6,7 +6,6 @@
 //
 //
 
-#import "cinder/Perlin.h"
 
 class Walker
 {
@@ -17,6 +16,5 @@ public:
 	
 private:
 	int			mX, mY;
-	ci::Perlin	mPerlin;
 	bool		mReady;
 };
