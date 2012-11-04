@@ -1,0 +1,223 @@
+TRandomWalkTrail
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/Info.plist Info.plist
+cCpResource CinderApp.icns ./build/Debug/RandomWalkTrail.app/Contents/Resources/CinderApp.icns
+cProcessPCH++ /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTrail_Prefix-etawnqyorzsxeiaduanxybtorvmo/RandomWalkTrail_Prefix.pch.pth RandomWalkTrail_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/RandomWalkTrailApp.o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/RandomWalkTrailApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/Walker.o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/Walker.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/MacOS/RandomWalkTrail normal i386
+cTouch /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c00000000503F1B7700000000000000AA
+t1346313079
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+c000000005077740700000000000024F0
+t1350005767
+s9456
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c00000000507774080000000000024D90
+t1350005768
+s150928
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioUnit.framework/AudioUnit
+c000000005077740800000000000060B4
+t1350005768
+s24756
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c000000005077740800000000000001E5
+t1350005768
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c0000000050777408000000000000E920
+t1350005768
+s59680
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c00000000501C4C7C00000000000069F0
+t1344031868
+s27120
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c00000000501C4C7D0000000000006730
+t1344031869
+s26416
+
+N/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c00000000505D1D810000000000081CB0
+t1348279681
+s531632
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c00000000505D1D8C000000000002DAF0
+t1348279692
+s187120
+
+N/System/Library/Frameworks/QTKit.framework/QTKit
+c0000000050592BA800000000004A2D90
+t1348021160
+s4861328
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c00000000505D1D8D0000000000322E20
+t1348279693
+s3288608
+
+N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/RandomWalkTrailApp.cpp
+c000000005096D0960000000000000352
+t1352061078
+s850
+
+N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/Walker.cpp
+c000000005096D0E50000000000000374
+t1352061157
+s884
+
+N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app
+t2
+s0
+
+N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/Info.plist
+t2
+s0
+
+N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/MacOS/RandomWalkTrail
+t2
+s0
+
+N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/Resources/CinderApp.icns
+t2
+s0
+
+N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/RandomWalkTrail.LinkFileList
+c000000005096D0E5000000000000019C
+t1352061157
+s412
+
+N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/RandomWalkTrailApp.o
+t2
+s0
+
+N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/Walker.o
+t2
+s0
+
+N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/CinderApp.icns
+c000000005096CF1D000000000001BEB5
+t1352060701
+s114357
+
+N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/RandomWalkTrail_Prefix.pch
+c000000005096CF1D0000000000000093
+t1352060701
+s147
+i<Cocoa/Cocoa.h>
+
+N/var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTrail_Prefix-etawnqyorzsxeiaduanxybtorvmo/RandomWalkTrail_Prefix.pch.pth
+t2
+s0
+
+NInfo.plist
+c000000005096CF1D0000000000000355
+t1352060701
+s853
+
+CBuild AST from /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/RandomWalkTrailApp.cpp
+r0
+
+CBuild AST from /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/Walker.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies0d34ef650847b641^5a9d00660847b641^---0#1#0#--18"Check dependencies36"CEA60642-A7EE-4EB5-BB60-A2CCA4D4C494-
+
+CCompileC ./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/RandomWalkTrailApp.o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/RandomWalkTrailApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s373753958.067181
+e373753962.309977
+r1
+xCompileC
+x./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/RandomWalkTrailApp.o
+x/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/RandomWalkTrailApp.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection150"Compile /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/RandomWalkTrailApp.cpp2db211660847b641^986d4f6a0847b641^---0#0#0#-19%DVTDocumentLocation2@158"file://localhost/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/RandomWalkTrailApp.cpp0000000000000000^3860"CompileC ./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/RandomWalkTrailApp.o ../src/RandomWalkTrailApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -g -Wno-sign-conversion -iquote /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/RandomWalkTrail-generated-files.hmap -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/RandomWalkTrail-own-target-headers.hmap -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/RandomWalkTrail-all-target-headers.hmap -iquote /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/RandomWalkTrail-project-headers.hmap -iquote../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/include -iquote../include -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/build/Debug/include -I../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/boost -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/DerivedSources/i386 -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/DerivedSources -F/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/build/Debug -include /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTrail_Prefix-etawnqyorzsxeiaduanxybtorvmo/RandomWalkTrail_Prefix.pch -MMD -MT dependencies -MF /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/RandomWalkTrailApp.d --serialize-diagnostics /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/RandomWalkTrailApp.dia -c /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/RandomWalkTrailApp.cpp -o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/RandomWalkTrailApp.o36"5AD7C206-CFE5-4F3E-80AE-70D6E3E8A39F-
+
+CCompileC ./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/Walker.o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/Walker.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s373753958.067200
+e373753963.645029
+r1
+xCompileC
+x./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/Walker.o
+x/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/Walker.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection138"Compile /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/Walker.cpp166e11660847b641^3222a56b0847b641^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/Walker.cpp0000000000000000^3788"CompileC ./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/Walker.o ../src/Walker.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -g -Wno-sign-conversion -iquote /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/RandomWalkTrail-generated-files.hmap -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/RandomWalkTrail-own-target-headers.hmap -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/RandomWalkTrail-all-target-headers.hmap -iquote /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/RandomWalkTrail-project-headers.hmap -iquote../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/include -iquote../include -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/build/Debug/include -I../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/boost -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/DerivedSources/i386 -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/DerivedSources -F/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/build/Debug -include /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTrail_Prefix-etawnqyorzsxeiaduanxybtorvmo/RandomWalkTrail_Prefix.pch -MMD -MT dependencies -MF /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/Walker.d --serialize-diagnostics /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/Walker.dia -c /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/../src/Walker.cpp -o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/Walker.o36"DDA2536D-337A-48A6-AA89-F138B79BB244-
+
+CCpResource CinderApp.icns ./build/Debug/RandomWalkTrail.app/Contents/Resources/CinderApp.icns
+s373753958.024462
+e373753958.027741
+r1
+xCpResource
+xCinderApp.icns
+x./build/Debug/RandomWalkTrail.app/Contents/Resources/CinderApp.icns
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Copy ./build/Debug/RandomWalkTrail.app/Contents/Resources/CinderApp.icns245e06660847b641^3f1907660847b641^---0#0#0#-19%DVTDocumentLocation2@196"file://localhost/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/Resources/CinderApp.icns000000000080d041^620"CpResource CinderApp.icns ./build/Debug/RandomWalkTrail.app/Contents/Resources/CinderApp.icns    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/CinderApp.icns /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/Resources36"83678E13-D57E-4A3A-9A30-194503C72B58-
+
+CLd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/MacOS/RandomWalkTrail normal i386
+s373753963.651996
+e373753965.442361
+r1
+xLd
+x/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/MacOS/RandomWalkTrail
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection182"Link /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/MacOS/RandomWalkTrailcd04a76b0847b641^703e716d0847b641^---0#0#0#--1428"Ld ./build/Debug/RandomWalkTrail.app/Contents/MacOS/RandomWalkTrail normal i386    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/build/Debug -F/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/build/Debug -filelist /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/Objects-normal/i386/RandomWalkTrail.LinkFileList -mmacosx-version-min=10.5 ../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/lib/libcinder_d.a -lcurl -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/MacOS/RandomWalkTrail36"5B40F76B-9A39-4205-86FC-695FFF094F19-
+
+CProcessInfoPlistFile /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/Info.plist Info.plist
+s373753958.012215
+e373753958.016330
+r1
+xProcessInfoPlistFile
+x/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/Info.plist
+xInfo.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist683e03660847b641^e86904660847b641^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/Info.plist0000000000000000^630"ProcessInfoPlistFile ./build/Debug/RandomWalkTrail.app/Contents/Info.plist Info.plist    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode    builtin-infoPlistUtility Info.plist -genpkginfo /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app/Contents/Info.plist36"DA242A2A-4DC9-4356-A2AE-BED5F848C1E1-
+
+CProcessPCH++ /Users/gkepler/Library/Developer/Xcode/DerivedData/RandomWalkTrail-dnsekrrvgkkwmaegueyxvfiuhmjz/Index/PrecompiledHeaders/RandomWalkTrail_Prefix-haxsrvgsnibmzpftwsqmnyqadtys_ast/RandomWalkTrail_Prefix.pch.pth RandomWalkTrail_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTrail_Prefix-etawnqyorzsxeiaduanxybtorvmo/RandomWalkTrail_Prefix.pch.pth RandomWalkTrail_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s373753958.036043
+e373753958.060011
+r1
+xProcessPCH++
+x/var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTrail_Prefix-etawnqyorzsxeiaduanxybtorvmo/RandomWalkTrail_Prefix.pch.pth
+xRandomWalkTrail_Prefix.pch
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile RandomWalkTrail_Prefix.pch297909660847b641^575d0f660847b641^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/RandomWalkTrail_Prefix.pch0000000000000000^3652"ProcessPCH++ /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTrail_Prefix-etawnqyorzsxeiaduanxybtorvmo/RandomWalkTrail_Prefix.pch.pth RandomWalkTrail_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -g -Wno-sign-conversion -iquote /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/RandomWalkTrail-generated-files.hmap -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/RandomWalkTrail-own-target-headers.hmap -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/RandomWalkTrail-all-target-headers.hmap -iquote /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/RandomWalkTrail-project-headers.hmap -iquote../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/include -iquote../include -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/build/Debug/include -I../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/boost -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/DerivedSources/i386 -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/RandomWalkTrail.build/Debug/RandomWalkTrail.build/DerivedSources -F/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/build/Debug --serialize-diagnostics /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTrail_Prefix-etawnqyorzsxeiaduanxybtorvmo/RandomWalkTrail_Prefix.pch.dia -c /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/RandomWalkTrail_Prefix.pch -o /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTrail_Prefix-etawnqyorzsxeiaduanxybtorvmo/RandomWalkTrail_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTrail_Prefix-etawnqyorzsxeiaduanxybtorvmo/RandomWalkTrail_Prefix.pch.d36"0096E8FF-C40A-4245-826A-17FDC79D2785-
+
+CTouch /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app
+s373753965.450138
+e373753965.597985
+r1
+xTouch
+x/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection152"Touch /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.appc154736d0847b641^6919996d0847b641^---0#0#0#--329"Touch ./build/Debug/RandomWalkTrail.app    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode    /usr/bin/touch -c /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTrail/xcode/./build/Debug/RandomWalkTrail.app36"B13FC389-0FEC-4B9E-93E0-66AC8DB50436-
+
