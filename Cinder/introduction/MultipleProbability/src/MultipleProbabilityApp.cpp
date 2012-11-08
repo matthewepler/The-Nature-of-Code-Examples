@@ -1,3 +1,11 @@
+//
+//  Multiple Probability
+//  The Nature of Code
+//
+//  Converted from Daniel Shiffman's Processing Examples
+//  Created by Greg Kepler
+//
+
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
 #include "cinder/Rand.h"
@@ -47,7 +55,7 @@ void MultipleProbabilityApp::draw()
 	float p1 = 0.05;				// 5% chance of pure white occurring
 	float p2 = 0.80 + p1;			// 80% chance of gray occuring
 	
-    float num = randFloat(1.0f);                 // pick a random number between 0 and 1
+    float num = randFloat(1.0f);	// pick a random number between 0 and 1
 	Color fillCol;
 	if (num <p1) {
 		fillCol = Color(1, 1, 1);

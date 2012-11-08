@@ -2,11 +2,9 @@
 //  Random Walker (No Vectors)
 //  The Nature of Code
 //
-//  Converted from Dan Shiffman's Processing Examples
+//  Converted from Daniel Shiffman's Processing Examples
 //  Created by Greg Kepler
 //
-//
-
 
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"

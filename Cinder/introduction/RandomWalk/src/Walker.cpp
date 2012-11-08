@@ -5,7 +5,6 @@
 //
 //  Created by Greg Kepler
 //
-//
 
 #include "cinder/app/AppBasic.h"
 #include "cinder/Rand.h"
