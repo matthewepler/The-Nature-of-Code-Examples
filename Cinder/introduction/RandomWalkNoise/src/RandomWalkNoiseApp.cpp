@@ -23,7 +23,7 @@ public:
 	void update();
 	void draw();
 	
-	Walker *walker;
+	Walker *mWalker;
 };
 
 
@@ -37,18 +37,18 @@ void RandomWalkNoiseApp::setup()
 {
 	gl::clear( Color( 0, 0, 0 ) );
 	// Create a walker object
-	walker = new Walker();
+	mWalker = new Walker();
 }
 
 void RandomWalkNoiseApp::update()
 {
-	walker->step();
+	mWalker->step();
 }
 
 void RandomWalkNoiseApp::draw()
 {
 	
-	walker->render();
+	mWalker->render();
 }
 
 CINDER_APP_BASIC( RandomWalkNoiseApp, RendererGl )
