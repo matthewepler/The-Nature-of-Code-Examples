@@ -22,9 +22,9 @@ class Gaussian2App : public AppBasic {
 	void update();
 	void draw();
 	
-	Rand *generator;
-	int width;
-	int height;
+	Rand *mGenerator;
+	int mWidth;
+	int mHeight;
 };
 
 void Gaussian2App::prepareSettings( Settings *settings )
@@ -35,9 +35,9 @@ void Gaussian2App::prepareSettings( Settings *settings )
 void Gaussian2App::setup()
 {
 	gl::clear( Color( 0, 0, 0 ) );
-	generator = new Rand();
-	width = getWindowWidth();
-	height = getWindowHeight();
+	mGenerator = new Rand();
+	mWidth = getWindowWidth();
+	mHeight = getWindowHeight();
 }
 
 void Gaussian2App::update()
@@ -50,12 +50,12 @@ void Gaussian2App::draw()
 	
 	//create an alpha blended background
 	gl::color( 0.0f, 0.0f, 0.0f, 0.01f );
-	gl::drawSolidRect( Rectf( 0, 0, getWindowWidth(), getWindowHeight() ) );
+	gl::drawSolidRect( Rectf( 0, 0, mWidth, mHeight ) );
 	
 	//get 3 gaussian random numbers w/ mean of 0 and standard deviation of 1.0
-	float r = (float) generator->nextGaussian();
-	float g = (float) generator->nextGaussian();
-	float b = (float) generator->nextGaussian();
+	float r = (float) mGenerator->nextGaussian();
+	float g = (float) mGenerator->nextGaussian();
+	float b = (float) mGenerator->nextGaussian();
 	
 	//define standard deviation and mean
 	float sd = 100.0f; float mean = 100.0f;
@@ -70,10 +70,10 @@ void Gaussian2App::draw()
 	b = constrain( ( b * sd ) + mean, 0.0f, 255.0f );
 	
 	//get more gaussian numbers, this time for location
-	float xloc = (float) generator->nextGaussian();
-	float yloc = (float) generator->nextGaussian();
-	sd = width/10;
-	mean = width/2;
+	float xloc = (float) mGenerator->nextGaussian();
+	float yloc = (float) mGenerator->nextGaussian();
+	sd = mWidth/10;
+	mean = mWidth/2;
 	xloc = ( xloc * sd ) + mean;
 	yloc = ( yloc * sd ) + mean;
 	
