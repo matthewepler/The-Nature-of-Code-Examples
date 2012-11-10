@@ -13,8 +13,11 @@ class Walker {
   Walker() {
     tx = 0;
     ty = 10000;
+    
     x = map(noise(tx), 0, 1, 0, width);
     y = map(noise(ty), 0, 1, 0, height);
+    
+    
   }
 
   void render() {
@@ -30,7 +33,10 @@ class Walker {
 
     x = map(noise(tx), 0, 1, 0, width);
     y = map(noise(ty), 0, 1, 0, height);
-
+    
+    println(noise(tx));
+    
+    //println((tx));
     tx += 0.01;
     ty += 0.01;
 

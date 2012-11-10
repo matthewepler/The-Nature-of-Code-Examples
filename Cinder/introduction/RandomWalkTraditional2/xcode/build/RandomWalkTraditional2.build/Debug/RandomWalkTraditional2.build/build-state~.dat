@@ -1,223 +1,0 @@
-TRandomWalkTraditional2
-v5
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/Info.plist Info.plist
-cCpResource CinderApp.icns ./build/Debug/RandomWalkTraditional2.app/Contents/Resources/CinderApp.icns
-cProcessPCH++ /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTraditional2_Prefix-bkehoqiscahdxnbsgbyjrlzmouwo/RandomWalkTraditional2_Prefix.pch.pth RandomWalkTraditional2_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/Walker.o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/Walker.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/RandomWalkTraditional2App.o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/RandomWalkTraditional2App.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/MacOS/RandomWalkTraditional2 normal i386
-cTouch /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
-c00000000503F1B7700000000000000AA
-t1346313079
-s170
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
-c000000005077740700000000000024F0
-t1350005767
-s9456
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c00000000507774080000000000024D90
-t1350005768
-s150928
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioUnit.framework/AudioUnit
-c000000005077740800000000000060B4
-t1350005768
-s24756
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c000000005077740800000000000001E5
-t1350005768
-s485
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
-c0000000050777408000000000000E920
-t1350005768
-s59680
-
-N/System/Library/Frameworks/Carbon.framework/Carbon
-c00000000501C4C7C00000000000069F0
-t1344031868
-s27120
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c00000000501C4C7D0000000000006730
-t1344031869
-s26416
-
-N/System/Library/Frameworks/CoreVideo.framework/CoreVideo
-c00000000505D1D810000000000081CB0
-t1348279681
-s531632
-
-N/System/Library/Frameworks/OpenGL.framework/OpenGL
-c00000000505D1D8C000000000002DAF0
-t1348279692
-s187120
-
-N/System/Library/Frameworks/QTKit.framework/QTKit
-c0000000050592BA800000000004A2D90
-t1348021160
-s4861328
-
-N/System/Library/Frameworks/QuickTime.framework/QuickTime
-c00000000505D1D8D0000000000322E20
-t1348279693
-s3288608
-
-N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/RandomWalkTraditional2App.cpp
-c000000005096A1A900000000000003A0
-t1352049065
-s928
-
-N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/Walker.cpp
-c000000005096A1A9000000000000056D
-t1352049065
-s1389
-
-N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app
-t2
-s0
-
-N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/Info.plist
-t2
-s0
-
-N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/MacOS/RandomWalkTraditional2
-t2
-s0
-
-N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/PkgInfo
-t2
-s0
-
-N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/Resources/CinderApp.icns
-t2
-s0
-
-N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/RandomWalkTraditional2.LinkFileList
-c000000005096A1A900000000000001CD
-t1352049065
-s461
-
-N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/RandomWalkTraditional2App.o
-t2
-s0
-
-N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/Walker.o
-t2
-s0
-
-N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/CinderApp.icns
-c000000005096A114000000000001BEB5
-t1352048916
-s114357
-
-N/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/RandomWalkTraditional2_Prefix.pch
-c000000005096A1140000000000000093
-t1352048916
-s147
-i<Cocoa/Cocoa.h>
-
-N/var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTraditional2_Prefix-bkehoqiscahdxnbsgbyjrlzmouwo/RandomWalkTraditional2_Prefix.pch.pth
-t2
-s0
-
-NInfo.plist
-c000000005096A114000000000000035C
-t1352048916
-s860
-
-CBuild AST from /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/RandomWalkTraditional2App.cpp
-r0
-
-CBuild AST from /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/Walker.cpp
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies6e52c529d946b641^81d1dd29d946b641^---0#1#0#--18"Check dependencies36"F0109D17-66B8-44F2-BD7D-C516C1466176-
-
-CCompileC ./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/RandomWalkTraditional2App.o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/RandomWalkTraditional2App.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s373741866.468132
-e373741872.499759
-r1
-xCompileC
-x./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/RandomWalkTraditional2App.o
-x/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/RandomWalkTraditional2App.cpp
-xnormal
-xi386
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection164"Compile /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/RandomWalkTraditional2App.cppea08782ad946b641^f8518130d946b641^---0#0#0#-19%DVTDocumentLocation2@172"file://localhost/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/RandomWalkTraditional2App.cpp0000000000000000^4175"CompileC ./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/RandomWalkTraditional2App.o ../src/RandomWalkTraditional2App.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -g -Wno-sign-conversion -iquote /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/RandomWalkTraditional2-generated-files.hmap -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/RandomWalkTraditional2-own-target-headers.hmap -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/RandomWalkTraditional2-all-target-headers.hmap -iquote /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/RandomWalkTraditional2-project-headers.hmap -iquote../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/include -iquote../include -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/build/Debug/include -I../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/boost -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/DerivedSources/i386 -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/DerivedSources -F/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/build/Debug -include /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTraditional2_Prefix-bkehoqiscahdxnbsgbyjrlzmouwo/RandomWalkTraditional2_Prefix.pch -MMD -MT dependencies -MF /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/RandomWalkTraditional2App.d --serialize-diagnostics /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/RandomWalkTraditional2App.dia -c /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/RandomWalkTraditional2App.cpp -o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/RandomWalkTraditional2App.o36"3DAC2E86-962C-4768-8E89-6023BEBFEAEA-
-
-CCompileC ./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/Walker.o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/Walker.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s373741866.466600
-e373741873.856741
-r1
-xCompileC
-x./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/Walker.o
-x/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/Walker.cpp
-xnormal
-xi386
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection145"Compile /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/Walker.cpp8fa5772ad946b641^44a7db31d946b641^---0#0#0#-19%DVTDocumentLocation2@153"file://localhost/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/Walker.cpp0000000000000000^4061"CompileC ./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/Walker.o ../src/Walker.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -g -Wno-sign-conversion -iquote /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/RandomWalkTraditional2-generated-files.hmap -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/RandomWalkTraditional2-own-target-headers.hmap -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/RandomWalkTraditional2-all-target-headers.hmap -iquote /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/RandomWalkTraditional2-project-headers.hmap -iquote../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/include -iquote../include -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/build/Debug/include -I../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/boost -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/DerivedSources/i386 -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/DerivedSources -F/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/build/Debug -include /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTraditional2_Prefix-bkehoqiscahdxnbsgbyjrlzmouwo/RandomWalkTraditional2_Prefix.pch -MMD -MT dependencies -MF /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/Walker.d --serialize-diagnostics /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/Walker.dia -c /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/../src/Walker.cpp -o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/Walker.o36"7B18FF33-FEBC-4168-9DED-0E35FD89EE0A-
-
-CCpResource CinderApp.icns ./build/Debug/RandomWalkTraditional2.app/Contents/Resources/CinderApp.icns
-s373741865.907712
-e373741865.912227
-r1
-xCpResource
-xCinderApp.icns
-x./build/Debug/RandomWalkTraditional2.app/Contents/Resources/CinderApp.icns
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy ./build/Debug/RandomWalkTraditional2.app/Contents/Resources/CinderApp.icns548fe829d946b641^7ba4e929d946b641^---0#0#0#-19%DVTDocumentLocation2@210"file://localhost/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/Resources/CinderApp.icns000000000080d041^655"CpResource CinderApp.icns ./build/Debug/RandomWalkTraditional2.app/Contents/Resources/CinderApp.icns    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/CinderApp.icns /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/Resources36"DB0AAEA1-D960-479A-AAF6-8046BC5D0B1F-
-
-CLd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/MacOS/RandomWalkTraditional2 normal i386
-s373741873.863782
-e373741877.212575
-r1
-xLd
-x/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/MacOS/RandomWalkTraditional2
-xnormal
-xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection203"Link /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/MacOS/RandomWalkTraditional2d34add31d946b641^f86b3635d946b641^---0#0#0#--1512"Ld ./build/Debug/RandomWalkTraditional2.app/Contents/MacOS/RandomWalkTraditional2 normal i386    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/build/Debug -F/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/build/Debug -filelist /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/Objects-normal/i386/RandomWalkTraditional2.LinkFileList -mmacosx-version-min=10.5 ../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/lib/libcinder_d.a -lcurl -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/MacOS/RandomWalkTraditional236"E276FBCE-9E54-494B-ACF4-E8A2DD94A715-
-
-CProcessInfoPlistFile /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/Info.plist Info.plist
-s373741865.871825
-e373741865.899570
-r1
-xProcessInfoPlistFile
-x/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/Info.plist
-xInfo.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist6057df29d946b641^aed4e729d946b641^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/Info.plist0000000000000000^672"ProcessInfoPlistFile ./build/Debug/RandomWalkTraditional2.app/Contents/Info.plist Info.plist    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode    builtin-infoPlistUtility Info.plist -genpkginfo /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app/Contents/Info.plist36"DDF0F53D-E702-4C1B-8575-AA69A2C60569-
-
-CProcessPCH++ /Users/gkepler/Library/Developer/Xcode/DerivedData/RandomWalkTraditional2-hivvlqsmzhmkombnbdpdujmdytmo/Index/PrecompiledHeaders/RandomWalkTraditional2_Prefix-dsnowtvpihkzmhdopmsuscprjwdq_ast/RandomWalkTraditional2_Prefix.pch.pth RandomWalkTraditional2_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessPCH++ /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTraditional2_Prefix-bkehoqiscahdxnbsgbyjrlzmouwo/RandomWalkTraditional2_Prefix.pch.pth RandomWalkTraditional2_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s373741865.920513
-e373741866.460102
-r1
-xProcessPCH++
-x/var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTraditional2_Prefix-bkehoqiscahdxnbsgbyjrlzmouwo/RandomWalkTraditional2_Prefix.pch.pth
-xRandomWalkTraditional2_Prefix.pch
-xnormal
-xi386
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Precompile RandomWalkTraditional2_Prefix.pch05e0eb29d946b641^96e7752ad946b641^---0#0#0#-19%DVTDocumentLocation2@169"file://localhost/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/RandomWalkTraditional2_Prefix.pch0000000000000000^3904"ProcessPCH++ /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTraditional2_Prefix-bkehoqiscahdxnbsgbyjrlzmouwo/RandomWalkTraditional2_Prefix.pch.pth RandomWalkTraditional2_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -g -Wno-sign-conversion -iquote /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/RandomWalkTraditional2-generated-files.hmap -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/RandomWalkTraditional2-own-target-headers.hmap -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/RandomWalkTraditional2-all-target-headers.hmap -iquote /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/RandomWalkTraditional2-project-headers.hmap -iquote../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/include -iquote../include -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/build/Debug/include -I../../../../../../../CodeDepot/C++/cinder_0.8.4_mac/boost -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/DerivedSources/i386 -I/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/RandomWalkTraditional2.build/Debug/RandomWalkTraditional2.build/DerivedSources -F/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/build/Debug --serialize-diagnostics /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTraditional2_Prefix-bkehoqiscahdxnbsgbyjrlzmouwo/RandomWalkTraditional2_Prefix.pch.dia -c /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/RandomWalkTraditional2_Prefix.pch -o /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTraditional2_Prefix-bkehoqiscahdxnbsgbyjrlzmouwo/RandomWalkTraditional2_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/71/pqqp3jkx27z_s2p1pw0lsnmh0000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/RandomWalkTraditional2_Prefix-bkehoqiscahdxnbsgbyjrlzmouwo/RandomWalkTraditional2_Prefix.pch.d36"6DB9CB4D-3C01-4A1A-9313-35036E5C84B4-
-
-CTouch /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app
-s373741877.220896
-e373741877.386793
-r1
-xTouch
-x/Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection166"Touch /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.appa8a63835d946b641^a9316535d946b641^---0#0#0#--357"Touch ./build/Debug/RandomWalkTraditional2.app    cd /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode    /usr/bin/touch -c /Users/gkepler/Documents/Work/NatureOfCode/The-Nature-of-Code-Examples/Cinder/introduction/RandomWalkTraditional2/xcode/./build/Debug/RandomWalkTraditional2.app36"7E64E273-565F-4D3B-8524-56D7FA10E8B4-
-

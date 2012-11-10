@@ -15,6 +15,8 @@ void draw() {
   // Run the walker object
   w.step();
   w.render();
+  
+  
 }
 
 
