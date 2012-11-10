@@ -24,14 +24,14 @@ Walker::Walker()
 // Randomly move up, down, left, right, or stay in one place
 void Walker::walk()
 {
-	Vec2f vel = Vec2f(randFloat(-2.0f, 2.0f), randFloat(-2.0f, 2.0f));
+	Vec2f vel = Vec2f( randFloat( -2.0f, 2.0f ), randFloat( -2.0f, 2.0f ) );
 	mLoc += vel;
     
 	// Stay on the screen
     mLoc.x = constrain( mLoc.x, 0.0f, (float)getWindowWidth()-1 );
     mLoc.y = constrain( mLoc.y, 0.0f, (float)getWindowHeight()-1 );
 	
-	mHistory.push_back(Vec2f(mLoc.x, mLoc.y));
+	mHistory.push_back( Vec2f( mLoc.x, mLoc.y ) );
 	if(mHistory.size() > 1000) {
 		mHistory.pop_front();
 	}
