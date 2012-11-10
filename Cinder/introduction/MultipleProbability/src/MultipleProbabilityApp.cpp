@@ -55,14 +55,14 @@ void MultipleProbabilityApp::draw()
 	float p1 = 0.05;				// 5% chance of pure white occurring
 	float p2 = 0.80 + p1;			// 80% chance of gray occuring
 	
-    float num = randFloat(1.0f);	// pick a random number between 0 and 1
+    float num = randFloat( 1.0f );	// pick a random number between 0 and 1
 	Color fillCol;
 	if (num <p1) {
-		fillCol = Color(1, 1, 1);
+		fillCol = Color( 1, 1, 1 );
 	} else if (num < p2) {
-		fillCol = Color(.58, .58, .58);
+		fillCol = Color( .58, .58, .58 );
 	} else {
-		fillCol = Color(0, 0, 0);
+		fillCol = Color( 0, 0, 0 );
 	}
 	
 	gl::color( fillCol );

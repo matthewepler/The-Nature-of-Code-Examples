@@ -23,7 +23,7 @@ public:
 	void update();
 	void draw();
 	
-	Walker *walker;
+	Walker *mWalker;
 };
 
 
@@ -36,18 +36,18 @@ void RandomWalkTraditional2App::setup()
 {
 	gl::clear( Color( 0, 0, 0 ) );
 	// Create a walker object
-	walker = new Walker();
+	mWalker = new Walker();
 }
 
 void RandomWalkTraditional2App::update()
 {
-	walker->step();
+	mWalker->step();
 }
 
 void RandomWalkTraditional2App::draw()
 {
 	
-	walker->render();
+	mWalker->render();
 }
 
 CINDER_APP_BASIC( RandomWalkTraditional2App, RendererGl )

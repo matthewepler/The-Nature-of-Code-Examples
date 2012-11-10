@@ -18,14 +18,13 @@ using namespace std;
 
 Walker::Walker()
 {
-	mLoc = Vec2f(getWindowWidth()/2, getWindowHeight()/2);
+	mLoc = Vec2f( getWindowWidth()/2, getWindowHeight()/2 );
 }
 
 // Randomly move up, down, left, right, or stay in one place
 void Walker::walk()
 {
-	Vec2f vel = randVec2f() * Vec2f(2.0f, 2.0f);
-	console() << vel << endl;
+	Vec2f vel = randVec2f() * Vec2f( 2.0f, 2.0f );
 	mLoc += vel;
     
 	// Stay on the screen
@@ -36,7 +35,7 @@ void Walker::walk()
 void Walker::render()
 {
 	gl::color( .68, .68, .68 );
-	Rectf box = Rectf(mLoc.x-20, mLoc.y-20, mLoc.x+20, mLoc.y+20);
+	Rectf box = Rectf( mLoc.x-20, mLoc.y-20, mLoc.x+20, mLoc.y+20 );
 	gl::drawSolidRect( box );
 	gl::color( 0, 0, 0 );
 	gl::drawStrokedRect( box );

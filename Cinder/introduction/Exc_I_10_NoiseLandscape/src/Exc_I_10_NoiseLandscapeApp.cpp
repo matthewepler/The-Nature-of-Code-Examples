@@ -14,20 +14,20 @@ class Exc_I_10_NoiseLandscapeApp : public AppBasic {
 	void update();
 	void draw();
 	
-	Landscape	*land;
-	float		theta;
+	Landscape	*mLand;
+	float		mTheta;
 };
 
 void Exc_I_10_NoiseLandscapeApp::prepareSettings( Settings *settings )
 {
-	settings->setWindowSize(800, 200);
-	land = new Landscape(20, 800, 400);
-	land->calculate();
+	settings->setWindowSize( 800, 200 );
+	mLand = new Landscape( 20, 800, 400 );
+	mLand->calculate();
 }
 
 void Exc_I_10_NoiseLandscapeApp::setup()
 {
-	theta = 0.0f;
+	mTheta = 0.0f;
 }
 
 void Exc_I_10_NoiseLandscapeApp::update()
@@ -40,17 +40,17 @@ void Exc_I_10_NoiseLandscapeApp::draw()
 	//gl::enableWireframe();
 	
 	glPushMatrix();
-	gl::translate((float)getWindowWidth()/2,(float)getWindowHeight()/2+20,-160);
+	gl::translate( (float)getWindowWidth()/2, (float)getWindowHeight()/2+20, -160 );
 
-	float xRot = toDegrees(M_PI/3);
-	float zRot = toDegrees(theta);
-	gl::rotate(Vec3f(xRot, 0, zRot));
-	land->render();
+	float xRot = toDegrees( M_PI/3 );
+	float zRot = toDegrees( mTheta );
+	gl::rotate( Vec3f( xRot, 0, zRot ) );
+	mLand->render();
 	glPopMatrix();
 	
-	land->calculate();
+	mLand->calculate();
 	
-	theta += 0.0025;
+	mTheta += 0.0025;
 }
 
 CINDER_APP_BASIC( Exc_I_10_NoiseLandscapeApp, RendererGl )

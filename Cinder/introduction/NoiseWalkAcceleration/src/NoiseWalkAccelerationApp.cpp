@@ -21,7 +21,7 @@ class NoiseWalkAccelerationApp : public AppBasic {
 	void update();
 	void draw();
 	
-	Walker *w;
+	Walker *mWalker;
 };
 
 void NoiseWalkAccelerationApp::prepareSettings( Settings *settings )
@@ -31,19 +31,19 @@ void NoiseWalkAccelerationApp::prepareSettings( Settings *settings )
 
 void NoiseWalkAccelerationApp::setup()
 {
-	w = new Walker();
+	mWalker = new Walker();
 }
 
 void NoiseWalkAccelerationApp::update()
 {
-	w->walk();
+	mWalker->walk();
 }
 
 void NoiseWalkAccelerationApp::draw()
 {
 	gl::clear( Color( 1, 1, 1 ) );
 	
-	w->display();
+	mWalker->display();
 }
 
 CINDER_APP_BASIC( NoiseWalkAccelerationApp, RendererGl )

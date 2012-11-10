@@ -21,7 +21,7 @@ class NOC_I_3_RandomWalkTendsToRightApp : public AppBasic {
 	void update();
 	void draw();
 	
-	Walker *walker;	
+	Walker *mWalker;	
 };
 
 void NOC_I_3_RandomWalkTendsToRightApp::prepareSettings( Settings *settings )
@@ -32,17 +32,17 @@ void NOC_I_3_RandomWalkTendsToRightApp::prepareSettings( Settings *settings )
 void NOC_I_3_RandomWalkTendsToRightApp::setup()
 {
 	gl::clear( Color( 1, 1, 1 ) );
-	walker = new Walker();
+	mWalker = new Walker();
 }
 
 void NOC_I_3_RandomWalkTendsToRightApp::update()
 {
-	walker->step();
+	mWalker->step();
 }
 
 void NOC_I_3_RandomWalkTendsToRightApp::draw()
 {
-	walker->render();
+	mWalker->render();
 }
 
 CINDER_APP_BASIC( NOC_I_3_RandomWalkTendsToRightApp, RendererGl )

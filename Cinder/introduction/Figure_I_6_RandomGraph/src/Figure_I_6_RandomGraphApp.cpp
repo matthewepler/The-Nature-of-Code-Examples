@@ -21,12 +21,12 @@ class Figure_I_6_RandomGraphApp : public AppBasic {
 	void update();
 	void draw();
 	
-	bool done = false;
+	bool mDone = false;
 };
 
 void Figure_I_6_RandomGraphApp::prepareSettings( Settings *settings )
 {
-	settings->setWindowSize(400, 200);
+	settings->setWindowSize( 400, 200 );
 }
 
 void Figure_I_6_RandomGraphApp::setup()
@@ -39,21 +39,21 @@ void Figure_I_6_RandomGraphApp::update()
 
 void Figure_I_6_RandomGraphApp::draw()
 {
-	if(done) return;
+	if( mDone ) return;
 	
 	gl::clear( Color( 1, 1, 1 ) );
 	
-	gl::color(0, 0, 0);
-	glLineWidth(2.0f);
-	gl::begin(GL_LINE_STRIP);
+	gl::color( 0, 0, 0 );
+	glLineWidth( 2.0f );
+	gl::begin( GL_LINE_STRIP );
 	for (int i = 0; i < getWindowWidth(); i++) {
-		float y = randFloat(0.0f, (float)getWindowHeight());
+		float y = randFloat( 0.0f, (float)getWindowHeight() );
 		console() << i << endl;
-		gl::vertex(i, y);
+		gl::vertex( i, y );
 	}
 	gl::end();
 	
-	done = true;
+	mDone = true;
 }
 
 CINDER_APP_BASIC( Figure_I_6_RandomGraphApp, RendererGl )

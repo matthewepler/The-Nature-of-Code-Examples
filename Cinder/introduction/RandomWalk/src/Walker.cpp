@@ -37,7 +37,7 @@ void Walker::walk()
 void Walker::render()
 {
 	gl::color( .68, .68, .68 );
-	Rectf box = Rectf(mX-20, mY-20, mX+20, mY+20);
+	Rectf box = Rectf( mX-20, mY-20, mX+20, mY+20 );
 	gl::drawSolidRect( box );
 	gl::color( 0, 0, 0 );
 	gl::drawStrokedRect( box );

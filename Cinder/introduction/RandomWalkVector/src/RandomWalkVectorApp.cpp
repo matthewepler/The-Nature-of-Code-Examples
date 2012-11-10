@@ -23,7 +23,7 @@ public:
 	void update();
 	void draw();
 	
-	Walker *walker;
+	Walker *mWalker;
 };
 
 
@@ -35,18 +35,18 @@ void RandomWalkVector::prepareSettings( Settings *settings )
 
 void RandomWalkVector::setup()
 {
-	walker = new Walker();
+	mWalker = new Walker();
 }
 
 void RandomWalkVector::update()
 {
-	walker->walk();
+	mWalker->walk();
 }
 
 void RandomWalkVector::draw()
 {
 	gl::clear( Color( 1, 1, 1 ) );
-	walker->render();
+	mWalker->render();
 }
 
 CINDER_APP_BASIC( RandomWalkVector, RendererGl )

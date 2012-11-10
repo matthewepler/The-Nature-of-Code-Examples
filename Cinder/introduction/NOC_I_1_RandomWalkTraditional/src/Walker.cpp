@@ -25,7 +25,7 @@ Walker::Walker()
 // Randomly move up, down, left, right, or stay in one place
 void Walker::step()
 {
-	int choice = randInt(4);
+	int choice = randInt( 4 );
     
     if (choice == 0) {
 		mX++;

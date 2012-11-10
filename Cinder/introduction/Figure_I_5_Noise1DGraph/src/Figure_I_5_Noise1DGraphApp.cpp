@@ -27,7 +27,7 @@ class Figure_I_5_Noise1DGraphApp : public AppBasic {
 
 void Figure_I_5_Noise1DGraphApp::prepareSettings( Settings *settings )
 {
-	settings->setWindowSize(400, 200);
+	settings->setWindowSize( 400, 200 );
 }
 
 void Figure_I_5_Noise1DGraphApp::setup()
@@ -44,13 +44,13 @@ void Figure_I_5_Noise1DGraphApp::draw()
 	gl::clear( Color( 1, 1, 1 ) );
 	
 	float xoff = mTime;
-	gl::color(0, 0, 0);
-	glLineWidth(2.0f);
+	gl::color( 0, 0, 0 );
+	glLineWidth( 2.0f );
 	gl::begin(GL_LINE_STRIP);
 	for (int i = 0; i < getWindowWidth(); i++) {
 		float y = (mPerlin.fBm(xoff)+0.5f) * getWindowHeight();
 		xoff += 0.01;
-		gl::vertex(i, y);
+		gl::vertex( i, y );
 	}
 	gl::end();
 	mTime += 0.01;

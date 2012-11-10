@@ -38,14 +38,14 @@ void Walker::render()
 // Randomly move according to floating point values
 void Walker::step()
 {
-	float stepX = randFloat(-1.0f, 1.0f);
-	float stepY = randFloat(-1.0f, 1.0f);
+	float stepX = randFloat( -1.0f, 1.0f );
+	float stepY = randFloat( -1.0f, 1.0f );
 	
 	mX += stepX;
     mY += stepY;
 	
-    mX = constrain(mX, 0.0f, (float)getWindowWidth()-1);
-	mY = constrain(mY, 0.0f, (float)getWindowHeight()-1);
+    mX = constrain( mX, 0.0f, (float)getWindowWidth()-1 );
+	mY = constrain( mY, 0.0f, (float)getWindowHeight()-1 );
 	
 	if(!mReady) mReady = true;
 }

@@ -22,9 +22,9 @@ class MonteCarloApp : public AppBasic {
 	void draw();
 	float montecarlo();
 	
-	vector<float> vals;
-	vector<float> norms;
-	int width, height;
+	vector<float> mVals;
+	vector<float> mNorms;
+	int mWidth, mHeight;
 };
 
 void MonteCarloApp::prepareSettings( Settings *settings )
@@ -34,10 +34,10 @@ void MonteCarloApp::prepareSettings( Settings *settings )
 
 void MonteCarloApp::setup()
 {
-	width = getWindowWidth();
-	height = getWindowHeight();
-	vals.resize(width);
-	norms.resize(width);
+	mWidth = getWindowWidth();
+	mHeight = getWindowHeight();
+	mVals.resize(mWidth);
+	mNorms.resize(mWidth);
 }
 
 void MonteCarloApp::update()
@@ -51,10 +51,10 @@ float MonteCarloApp::montecarlo() {
 	// Have we found one yet
 	bool foundone = false;
 	int hack = 0;  // let's count just so we don't get stuck in an infinite loop by accident
-	while (!foundone && hack < 10000) {
+	while ( !foundone && hack < 10000 ) {
 		// Pick two random numbers
-		float r1 = randFloat(1);
-		float r2 = randFloat(1);
+		float r1 = randFloat( 1 );
+		float r2 = randFloat( 1 );
 		float y = r1*r1;  // y = x*x (change for different results)
 		// If r2 is valid, we'll use this one
 		if (r2 < y) {
@@ -75,27 +75,26 @@ void MonteCarloApp::draw()
 	float n = montecarlo();
 	
 	// What spot in the array did we pick
-	int index = int(n*width);
-	vals[index]++;
-	//stroke(255);
-	gl::color(1, 1, 1);
+	int index = int( n * mWidth );
+	mVals[index]++;
+	gl::color( 1, 1, 1 );
 	
 	bool normalization = false;
 	float maxy = 0.0;
 	
-	// Draw graph based on values in norms array
+	// Draw graph based on values in mNorms array
 	// If a value is greater than the height, set normalization to true
-	for (int x = 0; x < vals.size(); x++) {
-		gl::drawLine(Vec2f(x, height), Vec2f(x, height - norms[x]));
-		if (vals[x] > height) normalization = true;
-		if (vals[x] > maxy) maxy = vals[x];
+	for (int x = 0; x < mVals.size(); x++) {
+		gl::drawLine( Vec2f(x, mHeight), Vec2f( x, mHeight - mNorms[x] ) );
+		if( mVals[x] > mHeight ) normalization = true;
+		if( mVals[x] > maxy ) maxy = mVals[x];
 	}
 	
 	// If normalization is true then normalize to height
 	// Otherwise, just copy the info
-	for (int x = 0; x < vals.size(); x++) {
-		if (normalization) norms[x] = (vals[x] / maxy) * (height);
-		else norms[x] = vals[x];
+	for (int x = 0; x < mVals.size(); x++) {
+		if( normalization ) mNorms[x] = (mVals[x] / maxy) * mHeight;
+		else mNorms[x] = mVals[x];
 	}
 }
 

@@ -18,7 +18,7 @@ using namespace std;
 
 Walker::Walker()
 {
-	mLoc = Vec2f(getWindowWidth()/2, getWindowHeight()/2);
+	mLoc = Vec2f( getWindowWidth()/2, getWindowHeight()/2 );
 }
 
 // Randomly move up, down, left, right, or stay in one place
@@ -41,7 +41,7 @@ void Walker::display()
 {
 	
 	gl::color( .68, .68, .68 );
-	Rectf box = Rectf(mLoc.x-8, mLoc.y-8, mLoc.x+8, mLoc.y+8);
+	Rectf box = Rectf( mLoc.x-8, mLoc.y-8, mLoc.x+8, mLoc.y+8 );
 	gl::drawSolidRect( box );
 	gl::color( 0, 0, 0 );
 	gl::drawStrokedRect( box );
@@ -49,7 +49,7 @@ void Walker::display()
 	
 	gl::begin(GL_LINE_STRIP);
     for (Vec2f v: mHistory) {
-		gl::vertex(v.x, v.y);
+		gl::vertex( v.x, v.y );
     };
 	gl::end();
 	

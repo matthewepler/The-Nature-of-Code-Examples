@@ -23,7 +23,7 @@ Walker::Walker()
 	mPerlin = Perlin();
 	
 	mLocation = Vec2f( (float)getWindowWidth()/2, (float)getWindowHeight()/2 );
-    mNOff = Vec2f (randFloat( 1000 ), randFloat( 1000 ) );
+    mNOff = Vec2f( randFloat( 1000 ), randFloat( 1000 ) );
 	mHistory = list<Vec2f>();
 	mReady = false;
 }
@@ -31,8 +31,8 @@ Walker::Walker()
 // Randomly move according to floating point values
 void Walker::walk()
 {	
-	mAcceleration.x = lmap(mPerlin.fBm( mNOff.x ), -0.5f, 0.5f, -1.0f, 1.0f );
-    mAcceleration.y = lmap(mPerlin.fBm( mNOff.y ), -0.5f, 0.5f, -1.0f, 1.0f );
+	mAcceleration.x = lmap( mPerlin.fBm( mNOff.x ), -0.5f, 0.5f, -1.0f, 1.0f );
+    mAcceleration.y = lmap( mPerlin.fBm( mNOff.y ), -0.5f, 0.5f, -1.0f, 1.0f );
     mAcceleration *= 0.1;
 	
     mNOff += Vec2f( 0.01, 0.01 );
@@ -57,15 +57,15 @@ void Walker::walk()
 void Walker::display()
 {	
 	gl::color( .68, .68, .68 );
-	Rectf box = Rectf(mLocation.x-8, mLocation.y-8, mLocation.x+8, mLocation.y+8);
+	Rectf box = Rectf( mLocation.x-8, mLocation.y-8, mLocation.x+8, mLocation.y+8 );
 	gl::drawSolidRect( box );
 	gl::color( 0, 0, 0 );
 	gl::drawStrokedRect( box );
 	
 	
-	gl::begin(GL_LINE_STRIP);
+	gl::begin( GL_LINE_STRIP );
     for (Vec2f v: mHistory) {
-		gl::vertex(v.x, v.y);
+		gl::vertex( v.x, v.y );
     };
 	gl::end();
 }

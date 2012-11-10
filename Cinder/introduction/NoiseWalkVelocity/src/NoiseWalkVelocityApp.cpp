@@ -21,7 +21,7 @@ public:
 	void update();
 	void draw();
 	
-	Walker *w;
+	Walker *mWalker;
 };
 
 void NoiseWalkVelocityApp::prepareSettings( Settings *settings )
@@ -32,19 +32,19 @@ void NoiseWalkVelocityApp::prepareSettings( Settings *settings )
 
 void NoiseWalkVelocityApp::setup()
 {
-	w = new Walker();
+	mWalker = new Walker();
 }
 
 void NoiseWalkVelocityApp::update()
 {
-	w->walk();
+	mWalker->walk();
 }
 
 void NoiseWalkVelocityApp::draw()
 {
 	gl::clear( Color( 1, 1, 1 ) );
 	
-	w->display();
+	mWalker->display();
 }
 
 CINDER_APP_BASIC( NoiseWalkVelocityApp, RendererGl )

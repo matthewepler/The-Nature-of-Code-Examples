@@ -32,20 +32,20 @@ void Walker::render()
 	// drawing a 1 pixel circle or a line that is 1 pixel wide is the
 	// closest thing to drawing a point in processing
 	//gl::drawSolidCircle(Vec2f(mX, mY), 1);
-	gl::drawLine(Vec2i(mX, mY), Vec2i(mX+1, mY));
+	gl::drawLine( Vec2i( mX, mY ), Vec2i( mX+1, mY ) );
 }
 
 // Randomly move according to floating point values
 void Walker::step()
 {
-	int stepX = randInt(3) - 1;
-	int stepY = randInt(3) - 1;
+	int stepX = randInt( 3 ) - 1;
+	int stepY = randInt( 3 ) - 1;
 	
 	mX += stepX;
     mY += stepY;
 	
-    mX = constrain(mX, 0, getWindowWidth()-1);
-	mY = constrain(mY, 0, getWindowHeight()-1);
+    mX = constrain( mX, 0, getWindowWidth()-1 );
+	mY = constrain( mY, 0, getWindowHeight()-1 );
 	
 	if(!mReady) mReady = true;
 }

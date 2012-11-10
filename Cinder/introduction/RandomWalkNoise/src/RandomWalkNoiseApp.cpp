@@ -2,7 +2,7 @@
 //  Random Walk Noise
 //  The Nature of Code
 //
-//  Converted from Dan Shiffman's Processing Examples
+//  Converted from Daniel Shiffman's Processing Examples
 //  Created by Greg Kepler
 //
 //
@@ -30,7 +30,7 @@ public:
 void RandomWalkNoiseApp::prepareSettings( Settings *settings )
 {
 	settings->setWindowSize( 640, 360 );
-	settings->setFrameRate(30.0f);
+	settings->setFrameRate( 30.0f );
 }
 
 void RandomWalkNoiseApp::setup()

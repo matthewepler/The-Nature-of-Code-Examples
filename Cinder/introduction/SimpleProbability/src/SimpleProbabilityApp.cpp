@@ -47,7 +47,7 @@ void SimpleProbabilityApp::draw()
 	
 	//create an alpha blended background
 	gl::color( 0.0f, 0.0f, 0.0f, 0.01f);
-	gl::drawSolidRect(Rectf( 0.0f, 0.0f, getWindowWidth(), getWindowHeight() ));
+	gl::drawSolidRect( Rectf( 0.0f, 0.0f, getWindowWidth(), getWindowHeight() ) );
 	
 	//calculate a probability between 0 and 100% based on mouseX location
 	float prob = ( getMousePos().x / (float) getWindowWidth() );
@@ -55,12 +55,10 @@ void SimpleProbabilityApp::draw()
 	//get a random floating point value between 0 and 1
 	float r = randFloat( 1.0f );
 	
-	console() << prob << " " << r << endl;
 	//test the random value against the probability and trigger an event
 	if (r < prob) {
-		//console() << "draw" << endl;
-		gl::color(1.0f, 1.0f, 1.0f);
-		gl::drawSolidEllipse( Vec2f(mX, mY), 5.0f, 5.0f );
+		gl::color( 1.0f, 1.0f, 1.0f );
+		gl::drawSolidEllipse( Vec2f( mX, mY ), 5.0f, 5.0f );
 	}
 	
 	// X and Y walk through a grid

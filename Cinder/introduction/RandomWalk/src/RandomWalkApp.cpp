@@ -21,7 +21,7 @@ class RandomWalkApp : public AppBasic {
 	void update();
 	void draw();
 	
-	Walker *walker;
+	Walker *mWalker;
 };
 
 
@@ -33,18 +33,18 @@ void RandomWalkApp::prepareSettings( Settings *settings )
 
 void RandomWalkApp::setup()
 {
-	walker = new Walker();
+	mWalker = new Walker();
 }
 
 void RandomWalkApp::update()
 {
-	walker->walk();
+	mWalker->walk();
 }
 
 void RandomWalkApp::draw()
 {
 	gl::clear( Color( 1, 1, 1 ) );
-	walker->render();
+	mWalker->render();
 }
 
 CINDER_APP_BASIC( RandomWalkApp, RendererGl )

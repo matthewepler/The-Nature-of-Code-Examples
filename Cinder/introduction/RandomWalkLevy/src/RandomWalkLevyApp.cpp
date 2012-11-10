@@ -2,7 +2,7 @@
 //  Random Walker
 //  The Nature of Code
 //
-//  Converted from Dan Shiffman's Processing Examples
+//  Converted from Daniel Shiffman's Processing Examples
 //  Created by Greg Kepler
 //
 //
@@ -23,7 +23,7 @@ public:
 	void update();
 	void draw();
 	
-	Walker *walker;
+	Walker *mWalker;
 };
 
 
@@ -36,17 +36,17 @@ void RandomWalkLevyApp::setup()
 {
 	gl::clear( Color( 0, 0, 0 ) );
 	// Create a walker object
-	walker = new Walker();
+	mWalker = new Walker();
 }
 
 void RandomWalkLevyApp::update()
 {
-	walker->step();
+	mWalker->step();
 }
 
 void RandomWalkLevyApp::draw()
 {
-	walker->render();
+	mWalker->render();
 }
 
 CINDER_APP_BASIC( RandomWalkLevyApp, RendererGl )

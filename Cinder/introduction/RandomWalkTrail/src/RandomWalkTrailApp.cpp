@@ -23,7 +23,7 @@ public:
 	void update();
 	void draw();
 	
-	Walker *walker;
+	Walker *mWalker;
 };
 
 
@@ -35,18 +35,18 @@ void RandomWalkTrailApp::prepareSettings( Settings *settings )
 
 void RandomWalkTrailApp::setup()
 {
-	walker = new Walker();
+	mWalker = new Walker();
 }
 
 void RandomWalkTrailApp::update()
 {
-	walker->walk();
+	mWalker->walk();
 }
 
 void RandomWalkTrailApp::draw()
 {
 	gl::clear( Color( 1, 1, 1 ) );
-	walker->display();
+	mWalker->display();
 }
 
 CINDER_APP_BASIC( RandomWalkTrailApp, RendererGl )

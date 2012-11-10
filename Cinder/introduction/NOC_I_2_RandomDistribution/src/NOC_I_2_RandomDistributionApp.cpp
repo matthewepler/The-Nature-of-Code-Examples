@@ -14,7 +14,7 @@ class NOC_I_2_RandomDistributionApp : public AppBasic {
 	void update();
 	void draw();
 	
-	vector<float> randomCounts;
+	vector<float> mRandomCounts;
 };
 
 void NOC_I_2_RandomDistributionApp::prepareSettings( Settings *settings )
@@ -25,7 +25,7 @@ void NOC_I_2_RandomDistributionApp::prepareSettings( Settings *settings )
 
 void NOC_I_2_RandomDistributionApp::setup()
 {
-	randomCounts.resize( 20 );
+	mRandomCounts.resize( 20 );
 }
 
 void NOC_I_2_RandomDistributionApp::mouseDown( MouseEvent event )
@@ -42,20 +42,20 @@ void NOC_I_2_RandomDistributionApp::draw()
 	gl::clear( Color( 0, 0, 0 ) );
 	
 	// Pick a random number and increase the count
-	int index = randInt(randomCounts.size());
-	randomCounts[index]++;
+	int index = randInt( mRandomCounts.size() );
+	mRandomCounts[index]++;
 	
 	// Draw a rectangle to graph results
 	
-	int w = getWindowWidth()/randomCounts.size();
-	for (int i = 0; i < randomCounts.size(); i++) {
+	int w = getWindowWidth() / mRandomCounts.size();
+	for (int i = 0; i < mRandomCounts.size(); i++) {
 		float x = (i*w);
-		float y = getWindowHeight()-randomCounts[i];
-		Rectf box = Rectf(x, y, x + w-1, y + randomCounts[i]);
-		gl::color(.5, .5, .5);
-		gl::drawSolidRect(box);
-		gl::color(0, 0, 0);
-		gl::drawStrokedRect(box);
+		float y = getWindowHeight() - mRandomCounts[i];
+		Rectf box = Rectf( x, y, x + w-1, y + mRandomCounts[i] );
+		gl::color( .5, .5, .5 );
+		gl::drawSolidRect( box );
+		gl::color( 0, 0, 0 );
+		gl::drawStrokedRect( box );
 	}
 }
 

@@ -15,8 +15,8 @@ public:
 	void step();
 	
 private:
-	float montecarlo();
-	float mX, mY;
-	float mPrevX, mPrevY;
-	bool		mReady;
+	float	montecarlo();
+	float	mX, mY;
+	float	mPrevX, mPrevY;
+	bool	mReady;
 };
