@@ -76,7 +76,7 @@ void MultipleProbabilityApp::draw()
 	// X and Y walk through a grid
 	console() << mY << endl;
 	mX = (mX + 10) % mWidth;
-	if (mX == 0) mY = (mY + 10) % mWidth;
+	if( mX == 0 ) mY = (mY + 10) % mWidth;
 	
 }
 

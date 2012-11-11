@@ -39,9 +39,9 @@ Walker::Walker()
 
 void Walker::render()
 {
-	if(!mReady) return;	// to prevent drawing before update is called
+	if( !mReady ) return;	// to prevent drawing before update is called
 	gl::color( 1, 1, 1 );
-	gl::drawLine( Vec2f(mPrevX, mPrevY), Vec2f(mX, mY) );
+	gl::drawLine( Vec2f( mPrevX, mPrevY ), Vec2f( mX, mY ) );
 }
 
 // Randomly move according to floating point values

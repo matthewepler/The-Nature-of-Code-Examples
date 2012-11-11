@@ -39,7 +39,7 @@ void NOC_1_5_vector_magnitudeApp::draw()
 	gl::clear( Color( 1, 1, 1 ) );
 	
 	Vec2f mouse = Vec2f( getMousePos().x, getMousePos().y );
-	Vec2f center = Vec2f( getWindowWidth()/2, getWindowHeight()/2 );
+	Vec2f center = Vec2f( getWindowWidth() / 2, getWindowHeight() / 2 );
 	mouse -= center;
 	
 	// length instead of mag
@@ -49,7 +49,7 @@ void NOC_1_5_vector_magnitudeApp::draw()
 	
 	// Need push and pop matrix since the matrix doesn't reset on draw like in processing
 	glPushMatrix();
-	gl::translate( getWindowWidth()/2, getWindowHeight()/2 );
+	gl::translate( getWindowWidth() / 2, getWindowHeight() / 2 );
 	glLineWidth( 2.0 );
 	gl::color( 0, 0, 0 );
 	gl::drawLine( Vec2f( 0,0 ), Vec2f( mouse.x, mouse.y ) );

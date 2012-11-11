@@ -26,8 +26,8 @@ Landscape::Landscape(int scale, int width, int height)
 	mZOff = 0.0f;
 	
 	// adjust the size of the vectors now that we have the number of columns and rows
-	mZ.resize(mCols);
-	for(int i=0; i<mCols; i++){
+	mZ.resize( mCols );
+	for( int i=0; i<mCols; i++ ){
 		mZ[i].resize( mRows );
 	}
 }
@@ -36,12 +36,12 @@ Landscape::Landscape(int scale, int width, int height)
 void Landscape::calculate()
 {
     float xoff = 0;
-    for (int i = 0; i < mCols; i++)
+    for( int i = 0; i < mCols; i++ )
     {
 		float yoff = 0;
-		for (int j = 0; j < mRows; j++)
+		for( int j = 0; j < mRows; j++ )
 		{
-			mZ[i][j] = lmap( mPerlin.fBm(xoff, yoff, mZOff) + 0.5f, 0.0f, 1.0f, -120.0f, 120.0f );
+			mZ[i][j] = lmap( mPerlin.fBm( xoff, yoff, mZOff ) + 0.5f, 0.0f, 1.0f, -120.0f, 120.0f );
 			yoff += 0.1;
 		}
 		xoff += 0.1;
@@ -54,9 +54,9 @@ void Landscape::render()
 {
     // Every cell is an individual quad
     // (could use quad_strip here, but produces funny results, investigate this)
-    for (int x = 0; x < mZ.size()-1; x++)
+    for( int x = 0; x < mZ.size() - 1; x++ )
     {
-		for (int y = 0; y < mZ[x].size()-1; y++)
+		for( int y = 0; y < mZ[x].size() - 1; y++ )
 		{
 			
 			// one quad at a time
@@ -66,7 +66,7 @@ void Landscape::render()
 			// There are more efficient ways to do this, but perhaps the easiest to explain
 			
 			glPushMatrix();
-			gl::translate( Vec3f( (x*mScale) - (mWidth/2), (y*mScale) - (mHeight/2), -160 ) );
+			gl::translate( Vec3f( ( x * mScale ) - ( mWidth / 2 ), ( y * mScale ) - ( mHeight / 2 ), -160 ) );
 			
 			// draw the quad
 			gl::color( .6, .6, .6 );

@@ -48,10 +48,10 @@ void NOC_I_2_RandomDistributionApp::draw()
 	// Draw a rectangle to graph results
 	
 	int w = getWindowWidth() / mRandomCounts.size();
-	for (int i = 0; i < mRandomCounts.size(); i++) {
+	for( int i = 0; i < mRandomCounts.size(); i++ ) {
 		float x = (i*w);
 		float y = getWindowHeight() - mRandomCounts[i];
-		Rectf box = Rectf( x, y, x + w-1, y + mRandomCounts[i] );
+		Rectf box = Rectf( x, y, x + w - 1, y + mRandomCounts[i] );
 		gl::color( .5, .5, .5 );
 		gl::drawSolidRect( box );
 		gl::color( 0, 0, 0 );

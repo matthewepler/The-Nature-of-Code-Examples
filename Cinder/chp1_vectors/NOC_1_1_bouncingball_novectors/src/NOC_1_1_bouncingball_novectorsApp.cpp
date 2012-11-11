@@ -51,10 +51,10 @@ void NOC_1_1_bouncingball_novectorsApp::draw()
 	mX = mX + mXSpeed;
 	mY = mY + mYSpeed;
 	
-	if ((mX > getWindowWidth()) || (mX < 0)) {
+	if( ( mX > getWindowWidth() ) || ( mX < 0 ) ) {
 		mXSpeed = mXSpeed * -1;
 	}
-	if ((mY > getWindowHeight()) || (mY < 0)) {
+	if( ( mY > getWindowHeight() ) || ( mY < 0 ) ) {
 		mYSpeed = mYSpeed * -1;
 	}
 	

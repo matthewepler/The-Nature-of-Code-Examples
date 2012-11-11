@@ -59,12 +59,12 @@ void NoiseDistributionApp::draw()
 	gl::color( 1, 1, 1 );
 	bool normalization = false;
 	float maxy = 0.0;
-	for (int x = 0; x < mVals.size(); x++) {
+	for( int x = 0; x < mVals.size(); x++ ) {
 		gl::drawLine( Vec2f( x, mHeight ), Vec2f( x, mHeight - mNorms[x] ) );
 		if( mVals[x] > mHeight ) normalization = true;
 		if( mVals[x] > maxy ) maxy = mVals[x];
 	}
-	for (int x = 0; x < mVals.size(); x++) {
+	for( int x = 0; x < mVals.size(); x++ ) {
 		if( normalization ) mNorms[x] = ( mVals[x] / maxy ) * mHeight;
 		else mNorms[x] = mVals[x];
 	}

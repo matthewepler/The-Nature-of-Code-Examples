@@ -51,7 +51,7 @@ void Noise2DApp::setup()
 			yOff += mIncrement;		// Increment yoff
 			
 			// Calculate noise and scale by 255
-			float bright = ( perlin.fBm( xOff, yOff )+0.5) * 255;
+			float bright = ( perlin.fBm( xOff, yOff ) + 0.5 ) * 255;
 			
 			// Try using this line instead
 			//			int bright = randInt( 0, 255 );

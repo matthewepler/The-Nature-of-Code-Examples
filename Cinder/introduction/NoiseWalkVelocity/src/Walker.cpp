@@ -22,7 +22,7 @@ Walker::Walker()
 {
 	mPerlin = Perlin();
 	
-	mLocation = Vec2f( (float)getWindowWidth()/2, (float)getWindowHeight()/2 );
+	mLocation = Vec2f( (float)getWindowWidth() / 2, (float)getWindowHeight() / 2 );
     mNOff = Vec2f( randFloat( 1000 ), randFloat( 1000 ) );
 	mHistory = list<Vec2f>();
 	mReady = false;
@@ -54,14 +54,14 @@ void Walker::walk()
 void Walker::display()
 {	
 	gl::color( .68, .68, .68 );
-	Rectf box = Rectf( mLocation.x-8, mLocation.y-8, mLocation.x+8, mLocation.y+8 );
+	Rectf box = Rectf( mLocation.x - 8, mLocation.y - 8, mLocation.x + 8, mLocation.y + 8 );
 	gl::drawSolidRect( box );
 	gl::color( 0, 0, 0 );
 	gl::drawStrokedRect( box );
 	
 	
 	gl::begin( GL_LINE_STRIP );
-    for (Vec2f v: mHistory) {
+    for( Vec2f v: mHistory ) {
 		gl::vertex( v.x, v.y );
     };
 	gl::end();

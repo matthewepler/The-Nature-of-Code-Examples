@@ -62,7 +62,7 @@ void Noise1DApp::draw()
 	
 	// Draw the ellipse at the value produced by perlin noise
 	gl::color( .78, .78, .78 );
-	gl::drawSolidEllipse( Vec2f( n, getWindowHeight()/2), 8, 8 );
+	gl::drawSolidEllipse( Vec2f( n, getWindowHeight() / 2 ), 8, 8 );
 	
 }
 

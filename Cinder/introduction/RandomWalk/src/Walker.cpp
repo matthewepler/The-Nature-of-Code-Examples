@@ -17,15 +17,15 @@ using namespace std;
 
 Walker::Walker()
 {
-	mX = getWindowWidth()/2;
-	mY = getWindowHeight()/2;
+	mX = getWindowWidth() / 2;
+	mY = getWindowHeight() / 2;
 }
 
 // Randomly move up, down, left, right, or stay in one place
 void Walker::walk()
 {
-	float vx = randFloat(4) - 2;
-    float vy = randFloat(4) - 2;
+	float vx = randFloat( 4 ) - 2;
+    float vy = randFloat( 4 ) - 2;
     mX += vx;
     mY += vy;
 	
@@ -37,7 +37,7 @@ void Walker::walk()
 void Walker::render()
 {
 	gl::color( .68, .68, .68 );
-	Rectf box = Rectf( mX-20, mY-20, mX+20, mY+20 );
+	Rectf box = Rectf( mX - 20, mY - 20, mX + 20, mY + 20 );
 	gl::drawSolidRect( box );
 	gl::color( 0, 0, 0 );
 	gl::drawStrokedRect( box );

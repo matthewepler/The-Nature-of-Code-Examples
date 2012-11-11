@@ -18,15 +18,15 @@ using namespace std;
 
 Walker::Walker()
 {
-	mX = getWindowWidth()/2;
-	mY = getWindowHeight()/2;
+	mX = getWindowWidth() / 2;
+	mY = getWindowHeight() / 2;
 	
 	mReady = false;
 }
 
 void Walker::render()
 {
-	if(!mReady) return;	// to prevent drawing before update is called
+	if( !mReady ) return;	// to prevent drawing before update is called
 	gl::color( 1, 1, 1 );
 	
 	// drawing a 1 pixel circle or a line that is 1 pixel wide is the
@@ -44,8 +44,8 @@ void Walker::step()
 	mX += stepX;
     mY += stepY;
 	
-    mX = constrain( mX, 0.0f, (float)getWindowWidth()-1 );
-	mY = constrain( mY, 0.0f, (float)getWindowHeight()-1 );
+    mX = constrain( mX, 0.0f, (float)getWindowWidth() - 1 );
+	mY = constrain( mY, 0.0f, (float)getWindowHeight() - 1 );
 	
 	if(!mReady) mReady = true;
 }

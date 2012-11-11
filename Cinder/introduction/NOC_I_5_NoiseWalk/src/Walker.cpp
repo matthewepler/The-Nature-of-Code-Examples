@@ -22,7 +22,7 @@ Walker::Walker()
 {
 	mPerlin = Perlin();
 	
-	mLocation = Vec2f( (float)getWindowWidth()/2, (float)getWindowHeight()/2 );
+	mLocation = Vec2f( (float)getWindowWidth() / 2, (float)getWindowHeight() / 2 );
     mNOff = Vec2f ( randFloat( 1000 ), randFloat( 1000 ) );
 	
 	mReady = false;

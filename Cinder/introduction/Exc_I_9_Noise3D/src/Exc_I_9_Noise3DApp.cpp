@@ -54,10 +54,10 @@ void Exc_I_9_Noise3DApp::draw()
 	float xOff = 0.0; // Start xoff at 0
 	
 	// For every x,y coordinate in a 2D space, calculate a noise value and produce a brightness value
-	for(int x = 0; x < getWindowWidth(); x++){
+	for( int x = 0; x < getWindowWidth(); x++ ){
 		xOff += mIncrement;
 		float yOff = 0.0;
-		for(int y=0; y<getWindowHeight(); y++){
+		for( int y=0; y < getWindowHeight(); y++ ){
 			yOff += mIncrement;
 			
 			// Calculate noise and scale by 255

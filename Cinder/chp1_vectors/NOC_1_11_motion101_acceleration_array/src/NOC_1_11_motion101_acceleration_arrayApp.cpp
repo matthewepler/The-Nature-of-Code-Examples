@@ -38,14 +38,14 @@ void NOC_1_11_motion101_acceleration_arrayApp::prepareSettings( Settings *settin
 void NOC_1_11_motion101_acceleration_arrayApp::setup()
 {
 	mMovers.resize( mMoverAmt );
-	for(int i = 0; i < mMovers.size(); i++){
+	for( int i = 0; i < mMovers.size(); i++ ){
 		 mMovers[i] = Mover();
 	}
 }
 
 void NOC_1_11_motion101_acceleration_arrayApp::update()
 {
-	for (int i = 0; i < mMovers.size(); i++) {
+	for( int i = 0; i < mMovers.size(); i++ ) {
 		mMovers[i].update( getMousePos() );
 	}
 }
@@ -53,7 +53,7 @@ void NOC_1_11_motion101_acceleration_arrayApp::update()
 void NOC_1_11_motion101_acceleration_arrayApp::draw()
 {
 	gl::clear( Color( 1, 1, 1 ) );
-	for (int i = 0; i < mMoverAmt; i++) {
+	for( int i = 0; i < mMoverAmt; i++ ) {
 		mMovers[i].display();
 	}
 }

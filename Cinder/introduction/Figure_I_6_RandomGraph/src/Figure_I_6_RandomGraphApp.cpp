@@ -46,9 +46,8 @@ void Figure_I_6_RandomGraphApp::draw()
 	gl::color( 0, 0, 0 );
 	glLineWidth( 2.0f );
 	gl::begin( GL_LINE_STRIP );
-	for (int i = 0; i < getWindowWidth(); i++) {
+	for( int i = 0; i < getWindowWidth(); i++ ) {
 		float y = randFloat( 0.0f, (float)getWindowHeight() );
-		console() << i << endl;
 		gl::vertex( i, y );
 	}
 	gl::end();

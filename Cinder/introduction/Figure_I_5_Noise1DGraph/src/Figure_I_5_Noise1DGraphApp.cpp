@@ -47,8 +47,8 @@ void Figure_I_5_Noise1DGraphApp::draw()
 	gl::color( 0, 0, 0 );
 	glLineWidth( 2.0f );
 	gl::begin(GL_LINE_STRIP);
-	for (int i = 0; i < getWindowWidth(); i++) {
-		float y = (mPerlin.fBm(xoff)+0.5f) * getWindowHeight();
+	for( int i = 0; i < getWindowWidth(); i++ ) {
+		float y = ( mPerlin.fBm( xoff ) + 0.5f ) * getWindowHeight();
 		xoff += 0.01;
 		gl::vertex( i, y );
 	}

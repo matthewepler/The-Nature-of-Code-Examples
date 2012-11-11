@@ -36,8 +36,8 @@ void MonteCarloApp::setup()
 {
 	mWidth = getWindowWidth();
 	mHeight = getWindowHeight();
-	mVals.resize(mWidth);
-	mNorms.resize(mWidth);
+	mVals.resize( mWidth );
+	mNorms.resize( mWidth );
 }
 
 void MonteCarloApp::update()
@@ -55,7 +55,7 @@ float MonteCarloApp::montecarlo() {
 		// Pick two random numbers
 		float r1 = randFloat( 1 );
 		float r2 = randFloat( 1 );
-		float y = r1*r1;  // y = x*x (change for different results)
+		float y = r1 * r1;  // y = x*x (change for different results)
 		// If r2 is valid, we'll use this one
 		if (r2 < y) {
 			foundone = true;
@@ -84,16 +84,16 @@ void MonteCarloApp::draw()
 	
 	// Draw graph based on values in mNorms array
 	// If a value is greater than the height, set normalization to true
-	for (int x = 0; x < mVals.size(); x++) {
-		gl::drawLine( Vec2f(x, mHeight), Vec2f( x, mHeight - mNorms[x] ) );
+	for( int x = 0; x < mVals.size(); x++ ) {
+		gl::drawLine( Vec2f( x, mHeight ), Vec2f( x, mHeight - mNorms[x] ) );
 		if( mVals[x] > mHeight ) normalization = true;
 		if( mVals[x] > maxy ) maxy = mVals[x];
 	}
 	
 	// If normalization is true then normalize to height
 	// Otherwise, just copy the info
-	for (int x = 0; x < mVals.size(); x++) {
-		if( normalization ) mNorms[x] = (mVals[x] / maxy) * mHeight;
+	for( int x = 0; x < mVals.size(); x++ ) {
+		if( normalization ) mNorms[x] = ( mVals[x] / maxy ) * mHeight;
 		else mNorms[x] = mVals[x];
 	}
 }

@@ -22,7 +22,7 @@ Walker::Walker()
 {
 	mPerlin = Perlin();
 	
-	mLocation = Vec2f( (float)getWindowWidth()/2, (float)getWindowHeight()/2 );
+	mLocation = Vec2f( (float)getWindowWidth() / 2, (float)getWindowHeight() / 2 );
     mNOff = Vec2f( randFloat( 1000 ), randFloat( 1000 ) );
 	mHistory = list<Vec2f>();
 	mReady = false;
@@ -38,12 +38,12 @@ void Walker::walk()
     mNOff += Vec2f( 0.01, 0.01 );
 	
     mVelocity += mAcceleration;
-    mVelocity.limit(1);
+    mVelocity.limit( 1 );
     mLocation += mVelocity;
     
 	
     mHistory.push_back( Vec2f(mLocation.x, mLocation.y) );
-    if (mHistory.size() > 1000) {
+    if( mHistory.size() > 1000 ) {
 		mHistory.pop_front();
     }
 	
@@ -64,7 +64,7 @@ void Walker::display()
 	
 	
 	gl::begin( GL_LINE_STRIP );
-    for (Vec2f v: mHistory) {
+    for( Vec2f v: mHistory ) {
 		gl::vertex( v.x, v.y );
     };
 	gl::end();

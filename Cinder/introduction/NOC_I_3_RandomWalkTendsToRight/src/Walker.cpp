@@ -18,8 +18,8 @@ using namespace std;
 
 Walker::Walker()
 {
-	mX = getWindowWidth()/2;
-	mY = getWindowHeight()/2;
+	mX = getWindowWidth() / 2;
+	mY = getWindowHeight() / 2;
 }
 
 // Randomly move up, down, left, right, or stay in one place

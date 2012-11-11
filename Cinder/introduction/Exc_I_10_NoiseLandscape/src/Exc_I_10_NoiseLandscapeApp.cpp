@@ -40,7 +40,7 @@ void Exc_I_10_NoiseLandscapeApp::draw()
 	//gl::enableWireframe();
 	
 	glPushMatrix();
-	gl::translate( (float)getWindowWidth()/2, (float)getWindowHeight()/2+20, -160 );
+	gl::translate( (float)getWindowWidth() / 2, (float)getWindowHeight() / 2 + 20, -160 );
 
 	float xRot = toDegrees( M_PI/3 );
 	float zRot = toDegrees( mTheta );

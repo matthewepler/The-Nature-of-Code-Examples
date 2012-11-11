@@ -46,7 +46,7 @@ void SimpleProbabilityApp::draw()
 	gl::enableAlphaBlending(); // add this to allow the drawing of semi-transparent shapes
 	
 	//create an alpha blended background
-	gl::color( 0.0f, 0.0f, 0.0f, 0.01f);
+	gl::color( 0.0f, 0.0f, 0.0f, 0.01f );
 	gl::drawSolidRect( Rectf( 0.0f, 0.0f, getWindowWidth(), getWindowHeight() ) );
 	
 	//calculate a probability between 0 and 100% based on mouseX location
@@ -56,14 +56,14 @@ void SimpleProbabilityApp::draw()
 	float r = randFloat( 1.0f );
 	
 	//test the random value against the probability and trigger an event
-	if (r < prob) {
+	if( r < prob ) {
 		gl::color( 1.0f, 1.0f, 1.0f );
 		gl::drawSolidEllipse( Vec2f( mX, mY ), 5.0f, 5.0f );
 	}
 	
 	// X and Y walk through a grid
-	mX = (mX + 10) % getWindowWidth();
-	if (mX == 0) mY = (mY + 10) % getWindowWidth();
+	mX = ( mX + 10 ) % getWindowWidth();
+	if( mX == 0 ) mY = ( mY + 10 ) % getWindowWidth();
 }
 
 CINDER_APP_BASIC( SimpleProbabilityApp, RendererGl )
