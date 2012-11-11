@@ -41,7 +41,6 @@ void NOC_1_10_motion101_accelerationApp::setup()
 
 void NOC_1_10_motion101_accelerationApp::update()
 {
-	getMousePos();
 	mMover->update( getMousePos() );
 }
 
