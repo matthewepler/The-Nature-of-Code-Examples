@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\NOC_1_5_vector_normalizeApp.cpp">
+    <ClCompile Include="..\src\NOC_1_6_vector_normalizeApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,5 +1,5 @@
 //
-//  Example 1-5: Normalize
+//  Example 1-6: Normalize
 //  Demonstration of normalizing a vector.
 //  Normalizing a vector sets its length to 1.
 //  The Nature of Code
@@ -16,28 +16,28 @@ using namespace ci;
 using namespace ci::app;
 using namespace std;
 
-class NOC_1_5_vector_normalizeApp : public AppBasic {
-  public:
+class NOC_1_6_vector_normalizeApp : public AppBasic {
+public:
 	void prepareSettings( Settings *settings);
 	void setup();
 	void update();
 	void draw();
 };
 
-void NOC_1_5_vector_normalizeApp::prepareSettings( Settings *settings )
+void NOC_1_6_vector_normalizeApp::prepareSettings( Settings *settings )
 {
 	settings->setWindowSize( 800, 200 );
 }
 
-void NOC_1_5_vector_normalizeApp::setup()
+void NOC_1_6_vector_normalizeApp::setup()
 {
 }
 
-void NOC_1_5_vector_normalizeApp::update()
+void NOC_1_6_vector_normalizeApp::update()
 {
 }
 
-void NOC_1_5_vector_normalizeApp::draw()
+void NOC_1_6_vector_normalizeApp::draw()
 {
 	gl::clear( Color( 1, 1, 1 ) );
 	
@@ -63,4 +63,4 @@ void NOC_1_5_vector_normalizeApp::draw()
 	glPopMatrix();
 }
 
-CINDER_APP_BASIC( NOC_1_5_vector_normalizeApp, RendererGl )
+CINDER_APP_BASIC( NOC_1_6_vector_normalizeApp, RendererGl )
