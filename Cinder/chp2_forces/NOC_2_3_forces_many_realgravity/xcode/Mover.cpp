@@ -1,6 +1,6 @@
 //
 //  Mover.cpp
-//  NOC_2_2_forces_many
+//  NOC_2_2_forces_many_realgravity
 //
 //  Created by Greg Kepler on 11/13/12.
 //

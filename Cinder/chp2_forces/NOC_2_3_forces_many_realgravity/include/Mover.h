@@ -10,7 +10,7 @@
 
 class Mover {
   public:
-	Mover( float m, float x , float y );
+	Mover();
 	
 	ci::Vec2f	mLocation, mVelocity, mAcceleration;
 	float		mMass;
