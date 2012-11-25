@@ -72,7 +72,7 @@ void Attractor::hover( Vec2f mouseLoc )
 {
     //float d = dist(mx,my,location.x,location.y);
 	float d = mLocation.distance( mouseLoc );
-    if (d < mMass) {
+    if ( d < mMass ) {
 		mRollover = true;
     }
     else {
@@ -80,13 +80,15 @@ void Attractor::hover( Vec2f mouseLoc )
     }
 }
 
-void Attractor::stopDragging() {
+void Attractor::stopDragging()
+{
     mDragging = false;
 }
 
 
 
-void Attractor::drag( Vec2f mouseLoc ) {
+void Attractor::drag( Vec2f mouseLoc )
+{
     if ( mDragging ) {
 		mLocation  = mouseLoc + mDragOffset;
     }

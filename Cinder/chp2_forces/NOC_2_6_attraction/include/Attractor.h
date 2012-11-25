@@ -14,6 +14,7 @@
 class Attractor {
 public:
 	Attractor();
+	Attractor( ci::Vec2f loc );
 	ci::Vec2f attract( const Mover &m );
 	void display();
 	void clicked( ci::Vec2f mouseLoc );

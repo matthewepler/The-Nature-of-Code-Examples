@@ -36,7 +36,8 @@ void NOC_2_2_forces_manyApp::setup()
 	mMovers = vector<Mover>();
 	for( int i = 0; i < mMoverAmt; i++ ){
 		mMovers.push_back( Mover( randFloat( 0.1, 4.0 ), 0.0, 0.0 ) );
-	}}
+	}
+}
 
 void NOC_2_2_forces_manyApp::update()
 {

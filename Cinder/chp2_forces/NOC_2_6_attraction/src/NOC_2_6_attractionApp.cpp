@@ -24,8 +24,8 @@ class NOC_2_6_attractionApp : public AppBasic {
 	void update();
 	void draw();
 	
-	Mover		*mMover;
-	Attractor	*mAttractor;
+	Mover		mMover;
+	Attractor	mAttractor;
 };
 
 void NOC_2_6_attractionApp::prepareSettings( Settings *settings )
@@ -35,28 +35,27 @@ void NOC_2_6_attractionApp::prepareSettings( Settings *settings )
 
 void NOC_2_6_attractionApp::setup()
 {
-	mMover = new Mover();
-	mAttractor = new Attractor();
+	mAttractor = Attractor( Vec2f( getWindowWidth() / 2, getWindowHeight() / 2 ) );
 }
 
 void NOC_2_6_attractionApp::mouseDown( MouseEvent event )
 {
-	mAttractor->clicked( getMousePos() );
+	mAttractor.clicked( getMousePos() );
 }
 
 void NOC_2_6_attractionApp::mouseUp(cinder::app::MouseEvent event)
 {
-	mAttractor->stopDragging();
+	mAttractor.stopDragging();
 }
 
 void NOC_2_6_attractionApp::update()
 {
-	Vec2f force = mAttractor->attract( *mMover );
-	mMover->applyForce( force );
-	mMover->update();
+	Vec2f force = mAttractor.attract( mMover );
+	mMover.applyForce( force );
+	mMover.update();
 	
-	mAttractor->drag( getMousePos() );
-	mAttractor->hover( getMousePos() );
+	mAttractor.drag( getMousePos() );
+	mAttractor.hover( getMousePos() );
 }
 
 void NOC_2_6_attractionApp::draw()
@@ -64,8 +63,8 @@ void NOC_2_6_attractionApp::draw()
 	// clear out the window with black
 	gl::clear( Color( 1, 1, 1 ) );
 	
-	mAttractor->display();
-	mMover->display();
+	mAttractor.display();
+	mMover.display();
 }
 
 CINDER_APP_BASIC( NOC_2_6_attractionApp, RendererGl )
