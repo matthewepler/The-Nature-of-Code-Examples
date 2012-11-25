@@ -1,16 +1,18 @@
 //
 //  Mover.h
-//  NOC_2_4_forces_many_realgravity
+//  NOC_2_6_attraction
 //
 //  Created by Greg Kepler on 11/13/12.
 //
 //
 
+#pragma once
+
 #include "cinder/app/AppBasic.h"
 
 class Mover {
 public:
-	Mover( float m, float x , float y );
+	Mover();
 	
 	ci::Vec2f	mLocation, mVelocity, mAcceleration;
 	float		mMass;
@@ -19,4 +21,5 @@ public:
 	void update();
 	void checkEdges();
 	void display();
+	void reset( ci::Vec2f loc );
 };

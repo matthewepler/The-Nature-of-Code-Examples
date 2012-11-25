@@ -56,10 +56,16 @@ void Mover::checkEdges()
 
 void Mover::display()
 {
-	gl::color( ColorA::gray( 0.0, 0.5 ) );
+	gl::color( ColorA8u::gray( 127, 200 ) );
 	gl::drawSolidEllipse( mLocation, mMass*8, mMass*8 );
 	
 	glLineWidth( 2.0 );
 	gl::color( Color::black() );
 	gl::drawStrokedEllipse( mLocation, mMass*8, mMass*8 );
+}
+
+void Mover::reset( ci::Vec2f loc )
+{
+	mLocation = loc;
+	mVelocity = Vec2f( 0.0, 0.0 );
 }

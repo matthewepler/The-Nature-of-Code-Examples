@@ -6,6 +6,8 @@
 //
 //
 
+#pragma once
+
 #include "cinder/app/AppBasic.h"
 
 class Mover {
@@ -19,4 +21,5 @@ public:
 	void update();
 	void checkEdges();
 	void display();
+	void reset( ci::Vec2f loc );
 };

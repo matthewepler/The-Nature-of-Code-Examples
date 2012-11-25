@@ -1,6 +1,6 @@
 //
 //  Mover.cpp
-//  NOC_2_4_forces_many_realgravity
+//  NOC_2_6_attraction
 //
 //  Created by Greg Kepler on 11/13/12.
 //
@@ -14,11 +14,11 @@ using namespace ci;
 using namespace ci::app;
 using namespace std;
 
-Mover::Mover( float m, float x , float y )
+Mover::Mover()
 {
-	mMass = m;
-	mLocation = Vec2f( x, y );
-	mVelocity = Vec2f( 0.0, 0.0 );
+	mMass = 1;
+	mLocation = Vec2f( 400, 50 );
+	mVelocity = Vec2f( 1.0, 0.0 );
 	mAcceleration = Vec2f( 0.0, 0.0 );
 }
 
@@ -62,4 +62,9 @@ void Mover::display()
 	glLineWidth( 2.0 );
 	gl::color( Color::black() );
 	gl::drawStrokedEllipse( mLocation, mMass*8, mMass*8 );
+}
+
+void Mover::reset( ci::Vec2f loc )
+{
+	mLocation = loc;
 }

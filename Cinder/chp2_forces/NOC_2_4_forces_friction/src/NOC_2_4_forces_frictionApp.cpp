@@ -49,11 +49,14 @@ void NOC_2_4_forces_frictionApp::update()
 		
 		float c = 0.05;
 		Vec2f friction = Vec2f( mMovers[i].mVelocity );
-		friction *= -1;
-		friction.normalize();
-		friction *= c;
+		if(friction != Vec2f(0, 0))
+		{
+			friction *= -1;
+			friction.normalize();
+			friction *= c;
+		}
 		
-		if( !isnan( friction.x ) && !isnan( friction.y) ) mMovers[i].applyForce( friction );
+		mMovers[i].applyForce( friction );
 		mMovers[i].applyForce( wind );
 		mMovers[i].applyForce( gravity );
 		mMovers[i].update();
