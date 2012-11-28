@@ -1,7 +1,7 @@
 //
 //  Attractor.cpp
 //  A class for a draggable attractive body in our world
-//  NOC_2_6_attraction
+//  NOC_2_7_attraction_many
 //
 //  Created by Greg Kepler on 11/22/12.
 //
