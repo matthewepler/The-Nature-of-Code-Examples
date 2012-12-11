@@ -57,9 +57,9 @@ void Mover::checkEdges()
 void Mover::display()
 {
 	gl::color( ColorA::gray( 0.0, 0.5 ) );
-	gl::drawSolidEllipse( mLocation, mMass*8, mMass*8 );
+	gl::drawSolidEllipse( mLocation, mMass * 8, mMass * 8 );
 	
 	glLineWidth( 2.0 );
 	gl::color( Color::black() );
-	gl::drawStrokedEllipse( mLocation, mMass*8, mMass*8 );
+	gl::drawStrokedEllipse( mLocation, mMass * 8, mMass * 8 );
 }

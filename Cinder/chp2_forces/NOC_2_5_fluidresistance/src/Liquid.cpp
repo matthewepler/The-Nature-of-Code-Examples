@@ -19,7 +19,7 @@ Liquid::Liquid()
 }
 
 Liquid::Liquid( float x, float y , float w, float h, float c )
-	: mX(x), mY(y), mW(w), mH(h), mC(c)
+	: mX( x ), mY( y ), mW( w ), mH( h ), mC( c )
 {
 	
 }

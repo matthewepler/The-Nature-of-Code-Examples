@@ -54,7 +54,7 @@ void NOC_2_5_fluidresistanceApp::setup()
 	}
 	reset();
 	
-	mLiquid = Liquid( 0.0, (float)getWindowHeight()/2.0, (float)getWindowWidth(), (float)getWindowHeight()/2.0, 0.1 );
+	mLiquid = Liquid( 0.0, getWindowHeight() / 2.0, getWindowWidth(), getWindowHeight()/2.0, 0.1 );
 	
 	TextLayout layout;
 	layout.setColor( Color( 0.9f, 0.9f, 0.9f ) );
@@ -73,7 +73,7 @@ void NOC_2_5_fluidresistanceApp::update()
 	for( int i = 0; i < mMovers.size(); i++ ) {
 		
 		// Is the Mover in the liquid?
-		if (mLiquid.contains(mMovers[i])) {
+		if( mLiquid.contains( mMovers[i] ) ) {
 			// Calculate drag force
 			Vec2f dragForce = mLiquid.drag(mMovers[i]);
 			// Apply drag force to Mover

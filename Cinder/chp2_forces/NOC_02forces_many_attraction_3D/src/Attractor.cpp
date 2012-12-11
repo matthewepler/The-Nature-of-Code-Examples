@@ -18,7 +18,7 @@ using namespace std;
 Attractor::Attractor():
 	mGravity( 0.4 ),
 	mMass( 20.0 ),
-	mLocation( Vec3f( 0, 0, 0) )
+	mLocation( Vec3f( 0, 0, 0 ) )
 {
 
 }

@@ -42,9 +42,9 @@ void NOC_02forces_many_mutual_boundariesApp::setup()
 
 void NOC_02forces_many_mutual_boundariesApp::update()
 {
-	for (int i = 0; i < mMovers.size(); i++) {
-		for (int j = 0; j < mMovers.size(); j++) {
-			if (i != j) {
+	for( int i = 0; i < mMovers.size(); i++ ) {
+		for( int j = 0; j < mMovers.size(); j++ ) {
+			if( i != j ) {
 				Vec2f force = mMovers[j].attract( mMovers[i] );
 				mMovers[i].applyForce( force );
 			}

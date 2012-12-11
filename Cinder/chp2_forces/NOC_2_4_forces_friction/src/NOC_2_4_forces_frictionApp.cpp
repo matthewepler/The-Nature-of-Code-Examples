@@ -49,7 +49,7 @@ void NOC_2_4_forces_frictionApp::update()
 		
 		float c = 0.05;
 		Vec2f friction = Vec2f( mMovers[i].mVelocity );
-		if(friction != Vec2f(0, 0))
+		if( friction != Vec2f( 0, 0 ) )
 		{
 			friction *= -1;
 			friction.normalize();
