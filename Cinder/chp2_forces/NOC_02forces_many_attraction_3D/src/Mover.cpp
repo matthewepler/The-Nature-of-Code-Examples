@@ -41,7 +41,4 @@ void Mover::display()
 {
 	gl::color( Color::white() );
 	gl::drawSphere( mLocation, mMass * 8 );
-	
-	//gl::color( Color::black() );
-	//gl::drawStrokedEllipse( mLocation, mMass, mMass );
 }

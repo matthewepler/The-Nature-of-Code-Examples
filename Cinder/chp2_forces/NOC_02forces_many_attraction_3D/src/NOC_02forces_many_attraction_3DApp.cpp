@@ -1,3 +1,11 @@
+//
+//  Forces: Many Attract - Repel 3D
+//  The Nature of Code
+//
+//  Converted from Daniel Shiffman's Processing Examples
+//  Created by Greg Kepler
+//
+
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
 #include "cinder/Rand.h"
@@ -16,7 +24,7 @@ class NOC_02forces_many_attraction_3DApp : public AppBasic {
 	void draw();
 	
 	vector<Mover>	mMovers;
-	int				mMoverAmt = 20;
+	int				mMoverAmt = 10;
 	Attractor		mAttractor;
 	float			mAngle;
 };
@@ -52,12 +60,11 @@ void NOC_02forces_many_attraction_3DApp::draw()
 	gl::clear( Color( 0, 0, 0 ) );
 	gl::enableDepthRead();
 	gl::enableDepthWrite();
+	
+	// -- lighting stuff --
 	glEnable( GL_LIGHTING );
 	glEnable( GL_LIGHT0 );
-	
-	glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
-	GLfloat light_position[] = { getWindowWidth()/2, getWindowHeight()/2, 1000.0f, 0.0 };
-	glLightfv( GL_LIGHT0, GL_POSITION, light_position );
+	// -- end lighting stuff --
 	
 	glPushMatrix();
 	

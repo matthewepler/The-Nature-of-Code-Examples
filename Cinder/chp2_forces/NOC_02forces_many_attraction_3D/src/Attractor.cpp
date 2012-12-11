@@ -41,10 +41,5 @@ Vec3f Attractor::attract( const Mover &m )
 void Attractor::display()
 {
 	gl::color( Color::white() );
-	gl::drawSphere( mLocation, mMass * 2.0 );
-	
-
-	
-
-
+	gl::drawSphere( mLocation, mMass * 2.0, 16.0 );					// The 3rd parameter is the sphere detail/segments (defualt is 12)
 }
