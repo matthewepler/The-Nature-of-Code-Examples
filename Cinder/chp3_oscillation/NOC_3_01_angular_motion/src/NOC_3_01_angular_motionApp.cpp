@@ -32,6 +32,7 @@ void NOC_3_01_angular_motionApp::prepareSettings( Settings *settings )
 
 void NOC_3_01_angular_motionApp::setup()
 {
+	gl::clear( Color( 1, 1, 1 ) );
 }
 
 void NOC_3_01_angular_motionApp::update()
@@ -42,22 +43,33 @@ void NOC_3_01_angular_motionApp::update()
 
 void NOC_3_01_angular_motionApp::draw()
 {
+	// no trail
 	gl::clear( Color( 1, 1, 1 ) );
 	
-	glPushMatrix();
+	// trail
+	/*gl::enableAlphaBlending();
+	gl::color( ColorA8u::gray( 255, 5 ) );
+	gl::drawSolidRect( getWindowBounds() );*/
 	
+	
+	glPushMatrix();
 	gl::translate( getWindowCenter() );
 	gl::rotate( toDegrees(mAngle) );
 	glLineWidth( 2.0 );
 	
+	// line
+	gl::color( Color::black() );
+	gl::drawLine( Vec2f( -60.0, 0.0 ), Vec2f( 60.0 ,0. ) );
+	
+	// circle solids
 	gl::color( Color8u::gray( 127 ) );
 	gl::drawSolidEllipse( Vec2f( 60.0, 0.0 ), 8, 8 );
 	gl::drawSolidEllipse( Vec2f( -60.0, 0.0 ), 8, 8 );
 	
+	// circle outlines
 	gl::color( Color::black() );
 	gl::drawStrokedEllipse( Vec2f( 60.0, 0.0 ), 8, 8 );
 	gl::drawStrokedEllipse( Vec2f( -60.0, 0.0 ), 8, 8 );
-	gl::drawLine( Vec2f( -60.0, 0.0 ), Vec2f( 60.0 ,0. ) );
 	
 	glPopMatrix();
 }
