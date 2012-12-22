@@ -1,5 +1,5 @@
 //
-//  Example 2-7: Attraction Many
+//  Example 3-2: Forces Angular Motion
 //  The Nature of Code
 //
 //  Converted from Daniel Shiffman's Processing Examples
