@@ -8,17 +8,19 @@
 
 #include "cinder/app/AppBasic.h"
 #include "cinder/Color.h"
+#include "cinder/Rand.h"
 #include "Mover.h"
 
 using namespace ci;
 using namespace ci::app;
 using namespace std;
 
-Mover::Mover( float m, float x , float y )
+Mover::Mover( float m, float x , float y ):
+	mAngle( 0 ), mAAcceleration( 0 ), mAVelocity( 0 )
 {
 	mMass = m;
 	mLocation = Vec2f( x, y );
-	mVelocity = Vec2f( 0.0, 0.0 );
+	mVelocity = Vec2f( randFloat( -1.0, 1.0 ), randFloat( -1.0, 1.0 ) );
 	mAcceleration = Vec2f( 0.0, 0.0 );
 }
 
@@ -32,39 +34,28 @@ void Mover::update()
 {
 	mVelocity += mAcceleration;
 	mLocation += mVelocity;
+	
+	mAAcceleration = mAcceleration.x / 10.0;
+	mAVelocity += mAAcceleration;
+	mAVelocity = constrain( mAVelocity, -0.1f, 0.1f );
+	mAngle += mAVelocity;
+	
 	mAcceleration *= 0;
-}
-
-void Mover::checkEdges()
-{
-	float width = getWindowWidth();
-	float height = getWindowHeight();
-	
-	if( mLocation.x > width ) {
-		mLocation.x = width;
-		mVelocity.x *= -1.0;
-    } else if( mLocation.x < 0.0 ) {
-		mVelocity.x *= -1.0;
-		mLocation.x = 0.0;
-    }
-	
-    if( mLocation.y > height ) {
-		mVelocity.y *= -1.0;
-		mLocation.y = height;
-    }
 }
 
 void Mover::display()
 {
-	gl::color( ColorA::gray( 0.0, 0.5 ) );
-	gl::drawSolidEllipse( mLocation, mMass * 8, mMass * 8 );
+	float w = mMass * 16;
+	Rectf drawRect = Rectf( -w/2, -w/2, w/2, w/2 );
 	
-	glLineWidth( 2.0 );
+	glPushMatrix();
+	gl::translate( mLocation );
+	gl::rotate( toDegrees( mAngle ) );
+	
+	gl::color( ColorA8u::gray( 175, 200 ) );
+	gl::drawSolidRect( drawRect );
+	
 	gl::color( Color::black() );
-	gl::drawStrokedEllipse( mLocation, mMass * 8, mMass * 8 );
-}
-
-void Mover::reset( ci::Vec2f loc )
-{
-	mLocation = loc;
+	gl::drawStrokedRect( drawRect );
+	glPopMatrix();
 }

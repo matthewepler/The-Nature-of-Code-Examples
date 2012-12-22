@@ -16,9 +16,10 @@ public:
 	
 	ci::Vec2f	mLocation, mVelocity, mAcceleration;
 	float		mMass;
-	float		mAngle, mAVelocity, mAAcceleration;
 	
 	void applyForce( ci::Vec2f force );
 	void update();
+	void checkEdges();
 	void display();
+	void reset( ci::Vec2f loc );
 };
