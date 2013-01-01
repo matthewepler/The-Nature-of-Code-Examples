@@ -1,6 +1,5 @@
 //
 //  Attractor.cpp
-//  A class for a draggable attractive body in our world
 //
 //  Created by Greg Kepler on 12/22/12.
 //
@@ -21,23 +20,21 @@ Attractor::Attractor()
 }
 
 Attractor::Attractor( Vec2f loc )
-	:mDragging( false ), mRollover( false )
 {
 	mLocation = loc;
     mMass = 20;
-    mGravity = 1;
-    mDragOffset = Vec2f( 0.0, 0.0 );
+    mGravity = 0.4f;
 }
 
 
 Vec2f Attractor::attract( const Mover &m )
 {
-	Vec2f force = mLocation - m.mLocation;						// Calculate direction of force
-    float d = force.length();									// Distance between objects
-    d = constrain( d, 5.0f, 25.0f );							// Limiting the distance to eliminate "extreme" results for very close or very far objects
-    force.normalize();											// Normalize vector (distance doesn't matter here, we just want this vector for direction)
+	Vec2f force = mLocation - m.mLocation;							// Calculate direction of force
+    float d = force.length();										// Distance between objects
+    d = constrain( d, 5.0f, 25.0f );								// Limiting the distance to eliminate "extreme" results for very close or very far objects
+    force.normalize();												// Normalize vector (distance doesn't matter here, we just want this vector for direction)
     float strength = ( mGravity * mMass * m.mMass ) / ( d * d );	// Calculate gravitional force magnitude
-    force *= strength;											// Get force vector --> magnitude * direction
+    force *= strength;												// Get force vector --> magnitude * direction
     return force;
 }
 
@@ -45,50 +42,11 @@ Vec2f Attractor::attract( const Mover &m )
 
 // Method to display
 void Attractor::display()
-{
-	glLineWidth( 4.0 );
+{	
+	gl::color( Color8u::gray( 127 ) );
+	gl::drawSolidEllipse( mLocation, 24, 24 );
 	
-    if( mDragging ) gl::color( Color8u::gray( 50 ) );
-    else if( mRollover ) gl::color( Color8u::gray( 100 ) );
-	else gl::color( ColorA8u::gray( 175, 200 ) );
-	gl::drawSolidEllipse( mLocation, mMass, mMass );
-	
+	glLineWidth( 2.0 );
 	gl::color( Color::black() );
-	gl::drawStrokedEllipse(mLocation, mMass, mMass );
-}
-
-// The methods below are for mouse interaction
-void Attractor::clicked( Vec2f mouseLoc )
-{
-	float d = mLocation.distance( mouseLoc );
-    if( d < mMass ) {
-		mDragging = true;
-		mDragOffset = mLocation - mouseLoc;
-    }
-}
-
-void Attractor::hover( Vec2f mouseLoc )
-{
-    //float d = dist(mx,my,location.x,location.y);
-	float d = mLocation.distance( mouseLoc );
-    if ( d < mMass ) {
-		mRollover = true;
-    }
-    else {
-		mRollover = false;
-    }
-}
-
-void Attractor::stopDragging()
-{
-    mDragging = false;
-}
-
-
-
-void Attractor::drag( Vec2f mouseLoc )
-{
-    if ( mDragging ) {
-		mLocation  = mouseLoc + mDragOffset;
-    }
+	gl::drawStrokedEllipse(mLocation, 24, 24 );
 }

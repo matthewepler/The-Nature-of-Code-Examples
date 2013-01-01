@@ -20,13 +20,11 @@ class NOC_3_02_forces_angular_motionApp : public AppBasic {
 public:
 	void prepareSettings( Settings *settings );
 	void setup();
-	void mouseDown( MouseEvent event );
-	void mouseUp( MouseEvent event );
 	void update();
 	void draw();
 	
 	vector<Mover>	mMovers;	// using a vector instead of an array
-	int				mMoverAmt = 10;
+	int				mMoverAmt = 20;
 	Attractor		mAttractor;
 };
 
@@ -45,31 +43,25 @@ void NOC_3_02_forces_angular_motionApp::setup()
 	mAttractor = Attractor( Vec2f( getWindowWidth() / 2, getWindowHeight() / 2 ) );
 }
 
-void NOC_3_02_forces_angular_motionApp::mouseDown( MouseEvent event )
-{
-	mAttractor.clicked( getMousePos() );
-}
-
-void NOC_3_02_forces_angular_motionApp::mouseUp(cinder::app::MouseEvent event)
-{
-	mAttractor.stopDragging();
-}
-
 void NOC_3_02_forces_angular_motionApp::update()
 {
-	for( int i = 0; i < mMovers.size(); i++ ) {
+	for( int i = 0; i < mMovers.size(); i++ )
+	{
 		Vec2f force = mAttractor.attract( mMovers[i] );
 		mMovers[i].applyForce( force );
 		mMovers[i].update();
 	}
-	
-	mAttractor.drag( getMousePos() );
-	mAttractor.hover( getMousePos() );
 }
 
 void NOC_3_02_forces_angular_motionApp::draw()
 {
-	gl::clear( Color( 1, 1, 1 ) );
+	//gl::clear( Color( 1, 1, 1 ) );
+	
+	// for motion trails
+	gl::color( ColorA8u::gray( 255, 5 ) );
+	gl::drawSolidRect( getWindowBounds() );
+	
+	gl::enableAlphaBlending();
 	
 	mAttractor.display();
 	for( int i = 0; i < mMovers.size(); i++ )

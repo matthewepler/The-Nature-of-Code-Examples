@@ -15,11 +15,9 @@ public:
 	Mover( float m, float x , float y );
 	
 	ci::Vec2f	mLocation, mVelocity, mAcceleration;
-	float		mMass;
+	float		mMass, mAngle, mAVelocity, mAAcceleration;
 	
 	void applyForce( ci::Vec2f force );
 	void update();
-	void checkEdges();
 	void display();
-	void reset( ci::Vec2f loc );
 };
