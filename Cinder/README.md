@@ -22,3 +22,7 @@ You'll also notice that the variables are slightly different to conform with bes
 Spacing conventions have been followed as much as possible as well. So instead of something like ``function(param1, param2);``, you'll see ``function( param1, param2 );``.
 
 If you're new to C++, you may be thrown off my some member variables with * in front of it, such as *walker in many of the introduction examples. This refers to the variable being a pointer. You can read more about pointers [here](http://www.cplusplus.com/doc/tutorial/pointers/).
+
+Chapter 3
+* Many of the processing examples include a version with trails on. The Cinder equivalent includes code that you can uncomment to turn trails on.
+

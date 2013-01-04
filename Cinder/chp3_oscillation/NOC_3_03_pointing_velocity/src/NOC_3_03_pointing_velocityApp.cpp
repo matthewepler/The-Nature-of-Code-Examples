@@ -1,3 +1,11 @@
+//
+//  Example 3-3: Pointing Velocity
+//  The Nature of Code
+//
+//  Converted from Daniel Shiffman's Processing Examples
+//  Created by Greg Kepler
+//
+
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
 #include "cinder/Rand.h"
