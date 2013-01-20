@@ -15,13 +15,17 @@ public:
 	Pendulum();
 	Pendulum( ci::Vec2f origin, float r );
 	
-	void go();
+	void clicked( ci::Vec2f mousePos );
+	void update();
+	void drag( ci::Vec2f mousePos );
+	void stopDragging();
+	void draw();
 	
 	
 private:
-	Vec2f mLocation;		// Location of pendulum ball
-	Vec2f mOrigin;			// Location of arm origin
-	float mR;				// Length of arm
+	ci::Vec2f mLocation;	// Location of pendulum ball
+	ci::Vec2f mOrigin;		// Location of arm origin
+	float mRadius;			// Length of arm
 	float mAngle;			// Pendulum arm angle
 	float mAVelocity;		// Angle velocity
 	float mAAcceleration;	// Angle acceleration

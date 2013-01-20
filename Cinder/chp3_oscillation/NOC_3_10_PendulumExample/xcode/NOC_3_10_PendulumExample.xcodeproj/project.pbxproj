@@ -36,7 +36,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2CC82F4D16AB59C500ED249A /* Pendulum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Pendulum.cpp; path = ../src/Pendulum.cpp; sourceTree = "<group>"; };
-		2CC82F4E16AB59C500ED249A /* Pendulum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pendulum.h; path = ../src/Pendulum.h; sourceTree = "<group>"; };
+		2CC82F4E16AB59C500ED249A /* Pendulum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pendulum.h; path = ../include/Pendulum.h; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* NOC_3_10_PendulumExample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NOC_3_10_PendulumExample_Prefix.pch; sourceTree = "<group>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
@@ -71,7 +71,6 @@
 			children = (
 				00BAE6590E7ED9C10018A608 /* NOC_3_10_PendulumExampleApp.cpp */,
 				2CC82F4D16AB59C500ED249A /* Pendulum.cpp */,
-				2CC82F4E16AB59C500ED249A /* Pendulum.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -126,6 +125,7 @@
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				2CC82F4E16AB59C500ED249A /* Pendulum.h */,
 				32CA4F630368D1EE00C91783 /* NOC_3_10_PendulumExample_Prefix.pch */,
 			);
 			name = Headers;

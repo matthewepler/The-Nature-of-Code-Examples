@@ -1,5 +1,5 @@
 //
-//  Example 3-9: Wave
+//  Example 3-10: Pendulum Example
 //  The Nature of Code
 //
 //  Converted from Daniel Shiffman's <http://www.shiffman.net> Processing Examples 
@@ -34,11 +34,12 @@ class NOC_3_10_PendulumExampleApp : public AppBasic {
 	void prepareSettings( Settings *settings );
 	void setup();
 	void mouseDown( MouseEvent event );
+	void mouse( MouseEvent event );
 	void mouseUp( MouseEvent event );
 	void update();
 	void draw();
 	
-	Pendulum mP;
+	Pendulum mPendulum;
 };
 
 void NOC_3_10_PendulumExampleApp::prepareSettings( Settings *settings )
@@ -48,27 +49,29 @@ void NOC_3_10_PendulumExampleApp::prepareSettings( Settings *settings )
 
 void NOC_3_10_PendulumExampleApp::setup()
 {
-	mP = Pendulum( Vec2f( getWindowWidth()/2, 0), 175 );
+	mPendulum = Pendulum( Vec2f( getWindowWidth()/2, 0), 175 );
 }
 
 void NOC_3_10_PendulumExampleApp::mouseDown( MouseEvent event )
 {
-	mP.clicked( getMousePos() );
+	mPendulum.clicked( getMousePos() );
 }
 
 void NOC_3_10_PendulumExampleApp::mouseUp( MouseEvent event )
 {
-	mP.stopDragging();
+	mPendulum.stopDragging();
 }
 
 void NOC_3_10_PendulumExampleApp::update()
 {
+	mPendulum.update();
+	mPendulum.drag( getMousePos() );
 }
 
 void NOC_3_10_PendulumExampleApp::draw()
 {
 	gl::clear( Color8u::gray( 255 ) );
-	p.go();
+	mPendulum.draw();
 }
 
 CINDER_APP_BASIC( NOC_3_10_PendulumExampleApp, RendererGl );
