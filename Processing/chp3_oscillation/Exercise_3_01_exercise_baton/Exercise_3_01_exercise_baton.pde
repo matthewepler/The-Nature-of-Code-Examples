@@ -1,9 +1,10 @@
-float angle = 0;			
+  float angle = 0;			
 
 void setup() {
   size(750, 150);
   smooth();
 }
+
 
 void draw() {
   background(255);
@@ -20,5 +21,6 @@ void draw() {
   ellipse(50, 0, 16, 16);
   ellipse(-50, 0, 16, 16);
   angle += 0.05;
-}
+  }
+
 
