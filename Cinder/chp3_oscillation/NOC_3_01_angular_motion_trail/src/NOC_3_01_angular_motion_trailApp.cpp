@@ -5,10 +5,10 @@ using namespace ci;
 using namespace ci::app;
 using namespace std;
 
-class NOC_3_01_angular_motionApp : public AppBasic {
+class NOC_3_01_angular_motion_trailApp : public AppBasic {
   public:
-	void prepareSettings( Settings *settings );
-    void setup();
+    void prepareSettings( Settings *settings );
+	void setup();
 	void update();
 	void draw();
     
@@ -17,24 +17,39 @@ class NOC_3_01_angular_motionApp : public AppBasic {
     float aAcceleration = 0.0001;
 };
 
-void NOC_3_01_angular_motionApp::prepareSettings( Settings *settings )
+void NOC_3_01_angular_motion_trailApp::prepareSettings( Settings *settings )
 {
     settings->setWindowSize( 800, 200 );
 }
 
-void NOC_3_01_angular_motionApp::setup()
+void NOC_3_01_angular_motion_trailApp::setup()
 {
-}
-
-void NOC_3_01_angular_motionApp::update()
-{
-}
-
-void NOC_3_01_angular_motionApp::draw()
-{
-	// clear out the window with white
+    // clear out the window with white
 	gl::clear( Color( 1, 1, 1 ) );
     
+    // turn on alpha blending
+    gl::enableAlphaBlending();
+}
+
+void NOC_3_01_angular_motion_trailApp::update()
+{
+}
+
+void NOC_3_01_angular_motion_trailApp::draw()
+{    
+    // draw the alpha background every frame for gradient trail effect
+    // all color/alpha values are between 0 and 1, so map the value if translating from Processing
+    float alphaValue = lmap<float>( 5, 0, 255, 0, 1 );
+    gl::color( 1, 1, 1, alphaValue );
+    Rectf backgroundAlpha = Rectf( Vec2f( 0.0f, 0.0f ), Vec2f( getWindowWidth(), getWindowHeight() ) );
+    gl::drawSolidRect( backgroundAlpha );
+    
+    // another way to do this is to get the Area of the window and use that to create a Rect object
+    // Area bounds = getWindowBounds();
+    // Rectf backgroundAlpha = Rectf( bounds );
+    // gl::drawSolidRect( backgroundAlpha );
+    
+    gl::color( 0.5f, 0.5f, 0.5f );
     // translate to the middle of the window
     // unlike Processing, push/popping the Matrix necessary when using OpenGL
     gl::pushMatrices();
@@ -61,12 +76,11 @@ void NOC_3_01_angular_motionApp::draw()
     gl::drawStrokedEllipse( Vec2f( -60.0f, 0.0f ), 8.0f, 8.0f );
     
     gl::popMatrices();
-
+    
     // increase angle velocity and acceleration
     angle += aVelocity;
     aVelocity += aAcceleration;
-    
 }
 
 
-CINDER_APP_BASIC( NOC_3_01_angular_motionApp, RendererGl )
+CINDER_APP_BASIC( NOC_3_01_angular_motion_trailApp, RendererGl )

@@ -36,9 +36,7 @@ void NOC_3_01_exercise_batonApp::draw()
     
     // translate to the middle of the window
     // unlike Processing, push/popping the Matrix necessary when using OpenGL
-
     gl::pushMatrices();
-    
     gl::translate( getWindowWidth()/2, getWindowHeight()/2 );
 
     // by default, OpenGL is in degrees
@@ -48,10 +46,10 @@ void NOC_3_01_exercise_batonApp::draw()
     // draw the line
     gl::color( 0, 0, 0 );
     glLineWidth( 2.0 );
-    gl::drawLine( Vec2f( -50.0f, 0.0f), Vec2f( 50, 0 ) );
+    gl::drawLine( Vec2f( -50.0f, 0.0f), Vec2f( 50.0f, 0.0f ) );
 	
     
-    // draw the ellipses
+    // draw the ellipses with radius of 8 (in Processing it takes diameter, so divide by 2)
     gl::color( 0.5, 0.5, 0.5 );
     gl::drawSolidEllipse( Vec2f(  50.0f, 0.0f ), 8.0f, 8.0f );
     gl::drawSolidEllipse( Vec2f( -50.0f, 0.0f ), 8.0f, 8.0f );
