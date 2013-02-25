@@ -64,13 +64,16 @@ void NOCWTFApp::update()
 
 void NOCWTFApp::draw()
 {
+    gl::clear( Color( 1, 1, 1 ) );
+    
+    // to add "trail" effect, comment the gl::clear above, then:
     // Map the alpha value from Processing (0-255) to Cinder (0-1), then draw background and all objects
     
-    float alphaVal = lmap<float>( 5, 0, 255, 0, 1 );
-    gl::color( 1, 1, 1, alphaVal );
-    Rectf background = Rectf( Vec2f( 0.0f, 0.0f ), Vec2f( getWindowWidth(), getWindowHeight() ) );
-    gl::drawSolidRect( background );
-    
+//    float alphaVal = lmap<float>( 5, 0, 255, 0, 1 );
+//    gl::color( 1, 1, 1, alphaVal );
+//    Rectf background = Rectf( Vec2f( 0.0f, 0.0f ), Vec2f( getWindowWidth(), getWindowHeight() ) );
+//    gl::drawSolidRect( background );
+
     mAttractor.display();
     
     for( int i = 0; i < ARRAYSIZE; i++ )
