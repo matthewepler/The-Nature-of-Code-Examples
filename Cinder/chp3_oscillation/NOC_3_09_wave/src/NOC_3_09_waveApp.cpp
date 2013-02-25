@@ -26,7 +26,10 @@ void NOC_3_09_waveApp::setup()
     gl::enableAlphaBlending();
     
     startAngle = 0;
-    angleVel   = 0.23;
+     angleVel  = 0.23;
+    // angleVel  = 0.05; // example NOC_3_09_wave_a
+    // angleVel  = 0.2; // example NOC_3_09_wave_b
+    // angleVel  = 0.4; // example NOC_3_09_wave_c
 }
 
 void NOC_3_09_waveApp::update()
