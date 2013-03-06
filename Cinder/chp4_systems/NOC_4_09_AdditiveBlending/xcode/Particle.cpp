@@ -10,20 +10,20 @@
 #include "cinder/app/AppBasic.h"
 #include "cinder/Rand.h"
 
+extern ci::gl::Texture img;
 
 using namespace ci;
 using namespace ci::app;
 using namespace std;
 
-extern ci::gl::Texture img;
 
-Particle::Particle( Vec2f location, ci::gl::Texture img )
+Particle::Particle( Vec2f location, ci::gl::Texture image )
 {
     mAcceleration = Vec2f( 0.0f, 0.05f );
     mVelocity     = Vec2f( randFloat( -1.0f, 1.0f ), randFloat( -1.0f, 1.0f ) );
     mVelocity     *= 2.0f;
     mLocation.set( location );
-    mTexture      = img;
+    particleTexture      = image;
 }
 
 
@@ -42,7 +42,7 @@ void Particle::update()
 
 void Particle::render()
 {
-    gl::draw( mTexture, mLocation );
+    ci::gl::draw( particleTexture, mLocation );
 }
 
 bool Particle::isDead()

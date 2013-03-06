@@ -15,13 +15,13 @@
 class Particle
 {
 public:
-    Particle( ci::Vec2f location, ci::gl::Texture img );
+    Particle( ci::Vec2f location, ci::gl::Texture image );
     
     ci::Vec2f       mLocation;
     ci::Vec2f       mVelocity;
     ci::Vec2f       mAcceleration;
+    ci::gl::Texture particleTexture;
     float           lifespan;
-    ci::gl::Texture mTexture;
     
     void run();
     void update();

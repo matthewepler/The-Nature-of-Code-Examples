@@ -21,6 +21,8 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		E280BF4D16E40E2B00F7727C /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E280BF4B16E40E2B00F7727C /* Particle.cpp */; };
 		E280BF5016E418F600F7727C /* ParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E280BF4E16E418F600F7727C /* ParticleSystem.cpp */; };
+		E2E4E12A16E7C02E00FF5867 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E4E12916E7C02E00FF5867 /* texture.png */; };
+		E2E4E12C16E7C06600FF5867 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E4E12B16E7C06600FF5867 /* texture.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		E280BF4C16E40E2B00F7727C /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
 		E280BF4E16E418F600F7727C /* ParticleSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleSystem.cpp; sourceTree = "<group>"; };
 		E280BF4F16E418F600F7727C /* ParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleSystem.h; sourceTree = "<group>"; };
+		E2E4E12916E7C02E00FF5867 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		E2E4E12B16E7C06600FF5867 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = texture.png; path = ../resources/texture.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		29B97314FDCFA39411CA2CEA /* NOC_4_09_AdditiveBlending */ = {
 			isa = PBXGroup;
 			children = (
+				E2E4E12616E7BFB400FF5867 /* assets */,
 				29B97315FDCFA39411CA2CEA /* Headers */,
 				080E96DDFE201D6D7F000001 /* Source */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -139,6 +144,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E2E4E12B16E7C06600FF5867 /* texture.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				00CCAF14116A9FEE008396D5 /* CinderApp.icns */,
 			);
@@ -152,6 +158,14 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2E4E12616E7BFB400FF5867 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E2E4E12916E7C02E00FF5867 /* texture.png */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				00CCAF15116A9FEE008396D5 /* CinderApp.icns in Resources */,
+				E2E4E12A16E7C02E00FF5867 /* texture.png in Resources */,
+				E2E4E12C16E7C06600FF5867 /* texture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,13 +25,14 @@ class NOC_4_09_AdditiveBlendingApp : public AppBasic {
 void NOC_4_09_AdditiveBlendingApp::prepareSettings( Settings *settings )
 {
     setWindowSize( 640, 360 );
-    //gl::enableAdditiveBlending();
 }
 
 void NOC_4_09_AdditiveBlendingApp::setup()
 {
-    img = gl::Texture( loadImage( "texture.png" ) );    
-    ps = ParticleSystem( 0, Vec2f( getWindowWidth(), 50.0f ), img );
+    img =  loadImage( loadResource( "texture.png" ) );
+    ps = ParticleSystem( 25, Vec2f( getWindowWidth(), 50.0f ), img );
+    
+    gl::enableAdditiveBlending();
 }
 
 void NOC_4_09_AdditiveBlendingApp::mouseDown( MouseEvent event )

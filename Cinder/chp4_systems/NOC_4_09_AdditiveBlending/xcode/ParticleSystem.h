@@ -16,12 +16,12 @@
 class ParticleSystem
 {
 public:
-    ParticleSystem( int num, ci::Vec2f v, ci::gl::Texture img );
+    ParticleSystem( int num, ci::Vec2f v, ci::gl::Texture image );
     ParticleSystem();
     
     std::vector<Particle> mParticles;
     ci::Vec2f             mOrigin;
-    ci::gl::Texture       mTexture;
+    ci::gl::Texture       systemTexture;
     
     void run();
     void addParticle();

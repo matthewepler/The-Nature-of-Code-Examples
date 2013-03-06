@@ -14,14 +14,15 @@ using namespace ci::app;
 using namespace std;
 
 
-ParticleSystem::ParticleSystem( int num, Vec2f v, ci::gl::Texture img )
+ParticleSystem::ParticleSystem( int num, Vec2f v, ci::gl::Texture image )
 {
     mParticles = vector<Particle>();
-    mOrigin    = *( &v );
-    mTexture   = img;
+    mOrigin    = v;
+    systemTexture   = image;
+    
     for( int i = 0; i < num; i++ )
     {
-        mParticles.push_back( Particle( mOrigin, mTexture ) );
+        mParticles.push_back( Particle( mOrigin, systemTexture ) );
     }
 }
 
@@ -42,7 +43,7 @@ void ParticleSystem::run()
 
 void ParticleSystem::addParticle()
 {
-    mParticles.push_back( Particle( mOrigin, mTexture ) );
+    mParticles.push_back( Particle( mOrigin, systemTexture ) );
 }
 
 void ParticleSystem::addParticle( Particle p )
